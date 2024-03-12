@@ -34,7 +34,7 @@ export const Carousel = () => {
   return (
     <div>
       <div id="slider">
-        <div className="slide">1</div>
+        <div className="slide">testimonials 1</div>
         <div className="slide">2</div>
         <div className="slide">3</div>
       </div>
