@@ -6,7 +6,7 @@ import { Jumbotron } from "../component/Jumbotron";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
-	const title= "Think Gym Unlimited"
+	const title= "Thynk Gym Unlimited"
 	const description = " Unleash Your Potential"
 
 
