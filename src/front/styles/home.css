@@ -6,7 +6,10 @@
     on that page only (the ones not reused in other pages).
 */
 
-body, html {
-    margin: 0;
-    padding: 0;
+
+/* Set left margin for the button */
+/* .btn-left {
+    margin-left: auto!important;
+    align-items: left;
   }
+   */
