@@ -1,16 +1,20 @@
 import React, { useEffect } from "react";
 import "../../styles/testimonials.css";
+import $ from "jquery";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick.js"; // Import Slick JS
 
 export const Carousel = () => {
   
 
   return (
-    <div class="pic-ctn">
-    <img src="https://picsum.photos/200/300?t=1" alt="" class="pic"/>
-    <img src="https://picsum.photos/200/300?t=2" alt="" class="pic"/>
-    <img src="https://picsum.photos/200/300?t=3" alt="" class="pic"/>
-    <img src="https://picsum.photos/200/300?t=4" alt="" class="pic"/>
-    <img src="https://picsum.photos/200/300?t=5" alt="" class="pic"/>
-  </div>
+    <div className="pic-ctn">
+      
+      <img src="https://embedsocial.com/wp-content/uploads/2023/01/image_d847be2420248b304798f01c07a007d1_800.png" alt="" className="pic" />
+      <img src="https://embedsocial.com/wp-content/uploads/2023/01/image_d847be2420248b304798f01c07a007d1_800.png" alt="" className="pic" />
+      <img src="https://embedsocial.com/wp-content/uploads/2023/01/image_d847be2420248b304798f01c07a007d1_800.png" alt="" className="pic" />
+      <img src="https://embedsocial.com/wp-content/uploads/2023/01/image_d847be2420248b304798f01c07a007d1_800.png" alt="" className="pic" />
+      <img src="https://embedsocial.com/wp-content/uploads/2023/01/image_d847be2420248b304798f01c07a007d1_800.png" alt="" className="pic" />
+    </div>
   );
 };
