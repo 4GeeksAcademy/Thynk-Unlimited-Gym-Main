@@ -54,24 +54,6 @@ export const Jumbotron = (props) => {
   };
 
   return (
-    // <div className="">
-    //   <div className="card w-100 bg-light" style={jumbotronStyle}>
-    //     <div className="card-body">
-    //       <div> 
-    //       <h1 className="card-title mt-5" style={titleStyle}>
-    //         {props.title}
-    //       </h1>
-    //       </div>
-    //       {/* <p className="card-text">{props.description}</p> */}
-    //       <div> 
-    //       <a href="#" className="btn btn-primary btn-left" style={buttonStyle}>
-    //         Join us!
-    //       </a>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
     <div className="w-100" style={jumbotronStyle}>
     <div className="d-flex" style={{flexDirection: "column"}}>
     <h1 className="mt-5 align-slef-end justify-self-start" style={titleStyle} >{props.title}</h1>
