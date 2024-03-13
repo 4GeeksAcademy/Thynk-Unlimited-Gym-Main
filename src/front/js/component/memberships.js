@@ -15,7 +15,7 @@ export const MembershipOptions = () => {
       setHoveredCard(null);
     };
 
-    return (
+  return (
     <div className="container d-flex my-5">
         <div className="row" >
           <div className="col"  >
