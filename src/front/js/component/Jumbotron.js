@@ -16,7 +16,7 @@ export const Jumbotron = (props) => {
     }, 5000); // Change the rotation interval as needed (in milliseconds)
 
     return function cleanup() {
-      clearInterval(intervalId); // Cleanup the interval on component unmount
+      clearInterval(intervalId); 
     };
   }, []);
 
