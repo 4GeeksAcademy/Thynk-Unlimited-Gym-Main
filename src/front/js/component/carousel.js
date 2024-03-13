@@ -47,32 +47,32 @@ export const Carousel = () => {
     {
       name: `Amanda S.`,
       img: `https://artofheadshots.com/wp-content/uploads/2010/01/amanda-seyfried.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+      review: `Transformed my fitness journey, one rep at a time!`,
     },
     {
       name: `Jungkook J.`,
       img: `https://www.pinkvilla.com/pics/350x500/1405280061_jungkook-p_202310.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+      review: `The gym that feels like home, where gains are made.`,
     },
     {
       name: `Viola D.`,
       img: `https://www.essence.com/wp-content/uploads/2018/04/1525115168/Screen%20Shot%202018-04-30%20at%203.05.53%20PM.png`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+      review: `Results-driven workouts with a supportive community.`,
     },
     {
       name: `Theo J.`,
       img: `https://media1.popsugar-assets.com/files/thumbor/tLetaXgCGSTgdSX8X0obyVX60TI=/1996x3000/filters:format_auto():quality(85):extract_cover()/2016/04/13/970/n/1922398/6eebc4ca0a486c78_GettyImages-477526487.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+      review: `Sweat, determination, and progress – all in one place.`,
     },
     {
       name: `Salma H.`,
       img: `https://imageio.forbes.com/images-forbes/media/2007/07/11/sexycelebs_1.jpg?height=340&width=280&fit=bounds`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+      review: `Finally found a gym that makes me excited to work out!`,
     },
     {
       name: `LeVar B.`,
       img: `https://parade.com/.image/t_share/MTkwNTc5Njc4MTI0NjQ4MzE2/levar-burton-headshot-ctr.jpg`,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+      review: `From couch potato to fitness fanatic – unlimited thanks to this gym!`,
     },
   ];
 
@@ -81,74 +81,16 @@ export const Carousel = () => {
       <div className="mt-20">
         <Slider {...settings}>
           {data.map((d, index) => (
-            <div key={index} className="testimonial-card">
+            <div
+              key={index}
+              className="testimonial-card w-1/2 sm:w-auto md:w-full lg:w-32 xl:w-3/4 ..."
+            >
               <div className="testimonial-image-container">
                 <img src={d.img} alt="" className="testimonial-image" />
               </div>
               <div className="testimonial-content">
                 <p className="testimonial-name">{d.name}</p>
                 <p className="testimonial-review">{d.review}</p>
-                <button
-                  onClick={console.log("click")}
-                  className="testimonial-button btn btn-dark bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl"
-                >
-                  Read More
-                  <svg
-                    width="79"
-                    height="46"
-                    viewBox="0 0 79 46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g filter="url(#filter0_f_618_1123)">
-                      <path
-                        d="M42.9 2H76.5L34.5 44H2L42.9 2Z"
-                        fill="url(#paint0_linear_618_1123)"
-                      />
-                    </g>
-                    <defs>
-                      <filter
-                        id="filter0_f_618_1123"
-                        x="0"
-                        y="0"
-                        width="78.5"
-                        height="46"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
-                      >
-                        <feFlood
-                          flood-opacity="0"
-                          result="BackgroundImageFix"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in="SourceGraphic"
-                          in2="BackgroundImageFix"
-                          result="shape"
-                        />
-                        <feGaussianBlur
-                          stdDeviation="1"
-                          result="effect1_foregroundBlur_618_1123"
-                        />
-                      </filter>
-                      <linearGradient
-                        id="paint0_linear_618_1123"
-                        x1="76.5"
-                        y1="2.00002"
-                        x2="34.5"
-                        y2="44"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="white" stop-opacity="0.6" />
-                        <stop
-                          offset="1"
-                          stop-color="white"
-                          stop-opacity="0.05"
-                        />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </button>
               </div>
             </div>
           ))}
