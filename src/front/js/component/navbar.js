@@ -5,9 +5,11 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light">
 			<div className="container">
+				<div className="logo">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1">Thynk Fitness Connection</span>
+					<img src="src/front/img/Thynk-logo-clear.png" alt="Thynk Unlimited Logo"/>
 				</Link>
+				</div>
 				<div>
 				<div className="ml-auto">
 				<form action="" method="post">
