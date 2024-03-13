@@ -4,7 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
-import { Member } from "./pages/member";
+
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
