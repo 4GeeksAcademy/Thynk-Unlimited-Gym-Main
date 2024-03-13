@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import "../../styles/testimonials.css";
-import $ from "jquery";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick.js"; // Import Slick JS
+
 
 export const Carousel = () => {
   
