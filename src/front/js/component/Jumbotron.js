@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/home.css";
+
 
 export const Jumbotron = (props) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -26,11 +26,12 @@ export const Jumbotron = (props) => {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     height: '70vh',
-    display: "flex",
-    alignItems: 'left',
-    justifyContent: 'flex',
+    display: 'flex',
+    alignItems: 'start',
     paddingTop: '300px',
-    marginLeft: '0'
+    marginLeft: 'auto',
+    flexDirection: 'colum',
+    justifyContent: 'start',
   };
 
   const titleStyle = {
@@ -48,22 +49,35 @@ export const Jumbotron = (props) => {
     fontSize: '20px', 
     padding: '10px 30px',
     borderRadius: '5px',
+    
 
   };
 
   return (
-    <div className="">
-      <div className="card w-100 bg-light" style={jumbotronStyle}>
-        <div className="card-body">
-          <h1 className="card-title mt-5" style={titleStyle}>
-            {props.title}
-          </h1>
-          {/* <p className="card-text">{props.description}</p> */}
-          <a href="#" className="btn btn-primary btn-left" style={buttonStyle}>
-            Join us!
-          </a>
-        </div>
-      </div>
+    // <div className="">
+    //   <div className="card w-100 bg-light" style={jumbotronStyle}>
+    //     <div className="card-body">
+    //       <div> 
+    //       <h1 className="card-title mt-5" style={titleStyle}>
+    //         {props.title}
+    //       </h1>
+    //       </div>
+    //       {/* <p className="card-text">{props.description}</p> */}
+    //       <div> 
+    //       <a href="#" className="btn btn-primary btn-left" style={buttonStyle}>
+    //         Join us!
+    //       </a>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
+    <div className="w-100" style={jumbotronStyle}>
+    <div className="d-flex" style={{flexDirection: "column"}}>
+    <h1 className="mt-5 align-slef-end justify-self-start" style={titleStyle} >{props.title}</h1>
+    <a href="#" className="btn btn-primary align-self-start justify-self-start ms-4 mt-3" style={buttonStyle}> Join us! </a>
     </div>
+    </div>
+
   );
 };
