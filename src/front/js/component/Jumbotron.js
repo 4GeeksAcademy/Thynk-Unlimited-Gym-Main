@@ -39,7 +39,6 @@ export const Jumbotron = (props) => {
     textAlign: "left",
     marginBottom: "0",
     fontSize: "80px",
-    marginLeft: "15px",
     color: "white",
   };
 
@@ -52,24 +51,20 @@ export const Jumbotron = (props) => {
     borderRadius: "5px",
   };
 
-  return (
-    <div className="w-100" style={jumbotronStyle}>
-      <div className="d-flex" style={{ flexDirection: "column" }}>
-        <h1
-          className="mt-5 align-slef-end justify-self-start"
-          style={titleStyle}
-        >
+return (
+  <div className="w-100" style={jumbotronStyle}>
+      <div className="d-flex" style={{ flexDirection: "column"}}>
+      <div>
+        <h1 className="ms-5 ps-5 pb-5" style={titleStyle}>
           {props.title}
         </h1>
-        <a
-          href="#"
-          className="btn btn-primary align-self-start justify-self-start ms-4 mt-3"
-          style={buttonStyle}
-        >
-          {" "}
-          Join us!{" "}
-        </a>
+      </div>
+      <div className="d-flex justify-content-start ps-5 ms-5 mt-auto">
+        <a href="#" className="btn btn-primary align-items-start" style={buttonStyle}>
+          Join us!
+        </a> 
       </div>
     </div>
-  );
+  </div>
+);
 };
