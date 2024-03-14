@@ -6,6 +6,7 @@ import { BackendURL } from "./component/backendURL";
 import { Home } from "./pages/home";
 // import { Member } from "./pages/member";
 import { Single } from "./pages/single";
+import Resources from "./pages/resources";
 import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
 
@@ -28,6 +29,7 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         {/* <Route element={<Member />} path="/member" /> */}
                         <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<Resources />} path="/resources" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

@@ -26,7 +26,8 @@ export const Jumbotron = (props) => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    height: "70vh",
+    height: "auto",
+    width: "auto",
     display: "flex",
     alignItems: "start",
     paddingTop: "300px",
@@ -55,14 +56,14 @@ return (
   <div className="w-100" style={jumbotronStyle}>
       <div className="d-flex" style={{ flexDirection: "column"}}>
       <div>
-        <h1 className="ms-5 ps-5 pb-5" style={titleStyle}>
+        <h1 className="ms-5 ps-5 pb-4" style={titleStyle}>
           {props.title}
         </h1>
       </div>
-      <div className="d-flex justify-content-start ps-5 ms-5 mt-auto">
-        <a href="#" className="btn btn-primary align-items-start" style={buttonStyle}>
+      <div className="d-flex justify-content-start ps-5 ms-5 mt-auto mb-5">
+      <button type="button" className="btn btn-primary align-items-start" style={buttonStyle}>
           Join us!
-        </a> 
+        </button> 
       </div>
     </div>
   </div>
