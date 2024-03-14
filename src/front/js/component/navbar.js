@@ -46,7 +46,7 @@ export const Navbar = () => {
             <Link to="/classes">
               <button className="btn btn-primary">Classes</button>
             </Link>
-            <Link to="/">
+            <Link to="/resources">
               <button className="btn btn-primary">Resources</button>
             </Link>
             <Link to="/shop">
