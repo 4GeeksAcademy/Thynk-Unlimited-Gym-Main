@@ -1,0 +1,13 @@
+.navbar {
+    width: 100%;
+  }
+  
+  .navbar-content {
+    width: 100%;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
