@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Footer = () => (
-	<footer className="footer mt-auto py-3 text-center">
+	<footer className="">
 		<div>
 		<h2>Our Partners</h2>
 		<a href="https://www.gatorade.com/">Gatorade</a>
