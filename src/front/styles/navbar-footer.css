@@ -1,0 +1,21 @@
+
+.navbar {
+    background-color: black; 
+  }
+
+
+  
+  .navbar-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+ li a {
+  text-decoration: none;
+  color: white;
+ }
+  
+  li a:hover {
+    color:gold;
+  }
+  
