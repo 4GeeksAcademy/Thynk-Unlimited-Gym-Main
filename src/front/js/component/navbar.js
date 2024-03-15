@@ -5,17 +5,16 @@ import "../../styles/navbar-footer.css"
 
 export const Navbar = () => {
   return (
-    <nav className="navbar container-fluid">
-      <div className="navbar-content d-flex justify-content-between align-items-center">
+    <nav className="navbar navbar-dark navbar-expand-md">
         {/* Logo */}
-        <div className="logo col-2">
+        <div className="navbar-brand navbar-left">
           <Link to="/">
-            <img className="img-fluid" src={logo} alt="Thynk Unlimited Logo" />
+            <img className="" src={logo} height={135}  alt="Thynk Unlimited Logo" />
           </Link>
         </div>
 
         {/* Container for login section and links */}
-        <div className="login-links d-flex">
+        <div className="navbar-nav navbar-right">
           {/* Login */}
           <div className="login-section">
             <form action="" method="post">
@@ -32,7 +31,7 @@ export const Navbar = () => {
           </div>
 
           {/* Links */}
-          <div className="links">
+          
             <ul className="navbar-list">
               <li className="navbar-item"><Link to="/">Home</Link></li>
               <li className="navbar-item"><Link to="/about-us">About Us</Link></li>
@@ -42,8 +41,6 @@ export const Navbar = () => {
               <li className="navbar-item"><Link to="/shop">Shop</Link></li>
             </ul>
           </div>
-        </div>
-      </div>
     </nav>
   );
 };
