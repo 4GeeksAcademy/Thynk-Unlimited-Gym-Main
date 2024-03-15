@@ -9,7 +9,7 @@ import { Single } from "./pages/single";
 import Resources from "./pages/resources";
 import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
-
+import { MembershipViewPage } from "./pages/membershipView";
 import { Navbar } from "./component/navbar";
 
 //create your first component
@@ -29,7 +29,11 @@ const Layout = () => {
                         <Route element={<Home />} path="/" />
                         {/* <Route element={<Member />} path="/member" /> */}
                         <Route element={<Single />} path="/single/:theid" />
+ Resources-MO
                         <Route element={<Resources />} path="/resources" />
+
+                        <Route element={< MembershipViewPage/> } path="/membershipView/:id"/> 
+main
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

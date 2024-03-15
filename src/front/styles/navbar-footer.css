@@ -1,0 +1,46 @@
+
+.navbar {
+    background-color: black; 
+    height: 100px;
+  }
+
+.navbar-nav {
+  display: block;
+}
+  
+  .navbar-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+ li ,a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+ }
+
+
+  li a:hover {
+    color:gold;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+  }
+  
+  .navbar__right {
+    display: block;
+    flex-direction: none;
+    align-items: center; 
+  }
+  
+  .navbar-item {
+    font-size: 25px;
+  }
+  
+footer {
+  padding: 10px 20px;
+}
