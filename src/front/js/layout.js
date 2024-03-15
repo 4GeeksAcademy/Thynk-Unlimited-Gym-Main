@@ -11,6 +11,7 @@ import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
 import { MembershipViewPage } from "./pages/membershipView";
 import { Navbar } from "./component/navbar";
+import { AboutUs } from "./pages/aboutUs";
 
 //create your first component
 const Layout = () => {
@@ -28,7 +29,7 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Home />} path="/" />
                         {/* <Route element={<Member />} path="/member" /> */}
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<AboutUs />} path="/about" />
  Resources-MO
                         <Route element={<Resources />} path="/resources" />
 
