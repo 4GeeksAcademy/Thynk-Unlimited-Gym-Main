@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../img/Thynk-logo-clear.png";
 import "../../styles/navbar-footer.css"
 
+
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-dark navbar-expand-md">
@@ -34,7 +35,7 @@ export const Navbar = () => {
           
             <ul className="navbar-list">
               <li className="navbar-item"><Link to="/">Home</Link></li>
-              <li className="navbar-item"><Link to="/about-us">About Us</Link></li>
+              <li className="navbar-item"><Link to="about">About Us</Link></li>
               <li className="navbar-item"><Link to="/members">Members</Link></li>
               <li className="navbar-item"><Link to="/classes">Classes</Link></li>
               <li className="navbar-item"><Link to="/resources">Resources</Link></li>
