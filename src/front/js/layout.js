@@ -5,12 +5,13 @@ import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
 // import { Member } from "./pages/member";
-import { Single } from "./pages/single";
 import Resources from "./pages/resources";
+
 import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
-import { MembershipViewPage } from "./pages/membershipView";
+import { MembershipViewPage } from "./pages/";
 import { Navbar } from "./component/navbar";
+import { AboutUs } from "./pages/aboutUs";
 import { Classes } from "./pages/eventScheduler";
 
 //create your first component
@@ -22,26 +23,23 @@ const Layout = () => {
   if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "")
     return <BackendURL />;
 
-  return (
-    <div>
-      <BrowserRouter basename={basename}>
-        <ScrollToTop>
-          <Navbar />
-          <Routes>
-            <Route element={<Home />} path="/" />
-            <Route element={<Resources />} path="/resources" />
-            <Route
-              element={<MembershipViewPage />}
-              path="/membershipView/:id"
-            />
-            <Route element={<Classes />} path="/classes" />
-            <Route element={<h1>Not found!</h1>} />
-          </Routes>
-          <Footer />
-        </ScrollToTop>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div>
+            <BrowserRouter basename={basename}>
+                <ScrollToTop>
+                    <Navbar />
+                    <Routes>
+                        <Route element={<Home />} path="/" />
+                        {/* <Route element={<Member />} path="/member" /> */}
+                        <Route element={<Resources />} path="/resources" />
+                        <Route element={< MembershipViewPage/> } path="/membershipView/:id"/> 
+                        <Route element={<h1>Not found!</h1>} />
+                    </Routes>
+                    <Footer />
+                </ScrollToTop>
+            </BrowserRouter>
+        </div>
+    );
 };
 
 export default injectContext(Layout);
