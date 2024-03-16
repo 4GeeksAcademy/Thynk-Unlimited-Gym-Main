@@ -6,7 +6,7 @@ import "../../styles/navbar-footer.css"
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-dark navbar-expand-md">
+    <nav className="navbar navbar-dark navbar-expand-md align-items-center">
         {/* Logo */}
         <div className="navbar-brand navbar-left">
           <Link to="/">
@@ -19,16 +19,20 @@ export const Navbar = () => {
           
             <ul className="navbar-list">
               <li className="navbar-item"><Link to="/">Home</Link></li>
+              
               <li className="navbar-item"><Link to="about">About Us</Link></li>
+              
               <li className="navbar-item"><Link to="/members">Members</Link></li>
+              
               <li className="navbar-item"><Link to="/classes">Classes</Link></li>
+              
               <li className="navbar-item"><Link to="/resources">Resources</Link></li>
+              
               <li className="navbar-item"><Link to="/shop">Shop</Link></li>
-              <li className="navbar-item"><Link to="/login"><button type="button" class="btn btn-outline-warning">Login</button>
-</Link></li>
-
+              
+              <li className="navbar-item"><Link to="/login"><button type="button" class="btn btn-outline-warning">Login</button></Link></li>
+              
             </ul>
-          </div>
     </nav>
   );
 };

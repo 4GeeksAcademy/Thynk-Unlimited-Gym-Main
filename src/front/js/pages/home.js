@@ -5,6 +5,7 @@ import { Jumbotron } from "../component/Jumbotron";
 import { Carousel } from "../component/carousel";
 import { MembershipOptions } from "../component/memberships";
 
+
 export const Home = () => {
   const { store, actions } = useContext(Context);
   const title = "Thynk Gym Unlimited";
