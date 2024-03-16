@@ -12,7 +12,6 @@ import injectContext from "./store/appContext";
 import { MembershipViewPage } from "./pages/";
 import { Navbar } from "./component/navbar";
 import { AboutUs } from "./pages/aboutUs";
-import { AboutUs } from "./pages/aboutUs";
 
 //create your first component
 const Layout = () => {
@@ -32,7 +31,6 @@ const Layout = () => {
                         <Route element={<AboutUs />} path="/about" />
                         {/* <Route element={<Member />} path="/member" /> */}
                         <Route element={<AboutUs />} path="/about" />
- Resources-MO
                         <Route element={<Resources />} path="/resources" />
 
 
