@@ -9,7 +9,7 @@ import Resources from "./pages/resources";
 
 import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
-import { MembershipViewPage } from "./pages/";
+import { MembershipViewPage } from "./pages/membershipView";
 import { Navbar } from "./component/navbar";
 import { AboutUs } from "./pages/aboutUs";
 import { Classes } from "./pages/eventScheduler";
@@ -30,7 +30,7 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
-                        {/* <Route element={<Member />} path="/member" /> */}
+                        <Route element={<AboutUs />} path="/about" />
                         <Route element={<Resources />} path="/resources" />
                         <Route element={< MembershipViewPage/> } path="/membershipView/:id"/> 
                         <Route element={<h1>Not found!</h1>} />

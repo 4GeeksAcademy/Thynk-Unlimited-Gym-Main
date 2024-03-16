@@ -2,15 +2,6 @@ import React from "react";
 import "../../styles/classes.css";
 
 export const Classes = () => {
-  const workouts = [
-    { name: `Pilates`, trainer: `Jenna Smith` },
-    { name: `Boxing`, trainer: `Ryan Johnson` },
-    { name: `Cardio`, trainer: `Jenna Smith` },
-    { name: `Circuits`, trainer: `Alexis Taylor` },
-    { name: `Karate`, trainer: `Samantha Rodriguez` },
-    { name: `Yoga`, trainer: `Robert Cage` },
-    { name: `Body Building`, trainer: `Marcus Chen` },
-  ];
 
   return (
     <section className="class-timetable-section spad">
