@@ -79,6 +79,7 @@
 		"owl.carousel": "^2.3.4",
 		"prop-types": "^15.6.1",
 		"react": "^16.8.4",
+		"react-bootstrap-icons": "^1.11.3",
 		"react-dom": "^16.8.4",
 		"react-icons": "^5.0.1",
 		"react-polyfills": "0.0.1",
