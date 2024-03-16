@@ -8,16 +8,15 @@ export const AboutUs = ()=>{
         <div>
         <h1>Meet the Team</h1>
 
-        {/* <div className="max-w-sm rounded overflow-hidden shadow-lg">
-  <img className="w-full" src="https://via.placeholder.com/350x150" alt="Card image cap" />
-  <div className="px-6 py-4">
-    <div className="font-bold text-xl mb-2">Card Title</div>
-    <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
-      eaque, exercitationem praesentium nihil.
-    </p>
+        <div className="card">
+  <img src="..." className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Name:</h5>
+    <p className="card-text">Bio: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Role:</p>
   </div>
-</div> */}
+</div>
+
 
         
         
