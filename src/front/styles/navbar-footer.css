@@ -4,9 +4,6 @@
     height: 100px;
   }
 
-.navbar-nav {
-  display: block;
-}
   
   .navbar-item {
     display: inline-block;
@@ -16,6 +13,7 @@
     display: flex;
     list-style-type: none;
   }
+  
   
   .navbar-item:not(:last-child) {
     border-right: 1px solid #ffffff; /* Adjust color as needed */

@@ -13,8 +13,9 @@ export const Navbar = () => {
             <img className="" src={logo} height={135}  alt="Thynk Unlimited Logo" />
           </Link>
         </div>
-      
-          {/* Links */}
+
+        {/* Container for login section and links */}
+        <div className="navbar-nav navbar-right">
           
             <ul className="navbar-list">
               <li className="navbar-item"><Link to="/">Home</Link></li>
