@@ -23,23 +23,27 @@ const Layout = () => {
   if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "")
     return <BackendURL />;
 
-    return (
-        <div>
-            <BrowserRouter basename={basename}>
-                <ScrollToTop>
-                    <Navbar />
-                    <Routes>
-                        <Route element={<Home />} path="/" />
-                        <Route element={<AboutUs />} path="/about" />
-                        <Route element={<Resources />} path="/resources" />
-                        <Route element={< MembershipViewPage/> } path="/membershipView/:id"/> 
-                        <Route element={<h1>Not found!</h1>} />
-                    </Routes>
-                    <Footer />
-                </ScrollToTop>
-            </BrowserRouter>
-        </div>
-    );
+  return (
+    <div>
+      <BrowserRouter basename={basename}>
+        <ScrollToTop>
+          <Navbar />
+          <Routes>
+            <Route element={<Home />} path="/" />
+            <Route element={<AboutUs />} path="/about" />
+            <Route element={<Resources />} path="/resources" />
+            <Route element={<Classes />} path="/classes" />
+            <Route
+              element={<MembershipViewPage />}
+              path="/membershipView/:id"
+            />
+            <Route element={<h1>Not found!</h1>} />
+          </Routes>
+          <Footer />
+        </ScrollToTop>
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default injectContext(Layout);
