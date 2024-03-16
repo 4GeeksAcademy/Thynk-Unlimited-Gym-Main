@@ -5,12 +5,13 @@ import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
 // import { Member } from "./pages/member";
-import { Single } from "./pages/single";
 import Resources from "./pages/resources";
+
 import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
-import { MembershipViewPage } from "./pages/membershipView";
+import { MembershipViewPage } from "./pages/";
 import { Navbar } from "./component/navbar";
+import { AboutUs } from "./pages/aboutUs";
 import { AboutUs } from "./pages/aboutUs";
 
 //create your first component
@@ -28,13 +29,15 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
+                        <Route element={<AboutUs />} path="/about" />
                         {/* <Route element={<Member />} path="/member" /> */}
                         <Route element={<AboutUs />} path="/about" />
  Resources-MO
                         <Route element={<Resources />} path="/resources" />
 
+
                         <Route element={< MembershipViewPage/> } path="/membershipView/:id"/> 
-main
+
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />
