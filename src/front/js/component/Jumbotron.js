@@ -22,7 +22,8 @@ export const Jumbotron = (props) => {
   }, []);
 
   const jumbotronStyle = {
-    backgroundImage: `url("${backgroundImageUrls[currentImageIndex]}")`,
+    position: "relative",
+    backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("${backgroundImageUrls[currentImageIndex]}")`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -32,7 +33,7 @@ export const Jumbotron = (props) => {
     alignItems: "start",
     paddingTop: "300px",
     marginLeft: "auto",
-    flexDirection: "colum",
+    flexDirection: "column",
     justifyContent: "start",
   };
 
@@ -40,7 +41,10 @@ export const Jumbotron = (props) => {
     textAlign: "left",
     marginBottom: "0",
     fontSize: "80px",
-    color: "white",
+    color: "transparent",
+    backgroundImage: "linear-gradient(to bottom, white, black)",
+    WebkitBackgroundClip: "text",
+    backgroundClip: "text",
   };
 
   const buttonStyle = {
@@ -52,20 +56,24 @@ export const Jumbotron = (props) => {
     borderRadius: "5px",
   };
 
-return (
-  <div className="w-100" style={jumbotronStyle}>
+  return (
+    <div className="w-100" style={jumbotronStyle}>
       <div className="d-flex" style={{ flexDirection: "column"}}>
-      <div>
-        <h1 className="ms-5 ps-5 pb-4" style={titleStyle}>
-          {props.title}
-        </h1>
-      </div>
-      <div className="d-flex justify-content-start ps-5 ms-5 mt-auto mb-5">
-      <button type="button" className="btn btn-primary align-items-start" style={buttonStyle}>
-          Join us!
-        </button> 
+        <div>
+          <h1 className="ms-5 ps-5 pb-4" style={titleStyle}>
+            {props.title}
+          </h1>
+        </div>
+        <div className="d-flex justify-content-start ps-5 ms-5 mt-auto mb-5">
+          <button type="button" className="btn btn-primary align-items-start" style={buttonStyle}>
+            Join us!
+          </button> 
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
+
+
+
+
