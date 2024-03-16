@@ -16,22 +16,6 @@ export const Navbar = () => {
 
         {/* Container for login section and links */}
         <div className="navbar-nav navbar-right">
-          {/* Login */}
-          <div className="login-section">
-            <form action="" method="post">
-              <label htmlFor="uname">
-                <b>Username</b>
-              </label>
-              <input type="text" placeholder="Enter Username" name="uname" required />
-              <label htmlFor="psw">
-                <b>Password</b>
-              </label>
-              <input type="password" placeholder="Enter Password" name="psw" required />
-              <button type="submit">Login</button>
-            </form>
-          </div>
-
-          {/* Links */}
           
             <ul className="navbar-list">
               <li className="navbar-item"><Link to="/">Home</Link></li>
@@ -40,6 +24,9 @@ export const Navbar = () => {
               <li className="navbar-item"><Link to="/classes">Classes</Link></li>
               <li className="navbar-item"><Link to="/resources">Resources</Link></li>
               <li className="navbar-item"><Link to="/shop">Shop</Link></li>
+              <li className="navbar-item"><Link to="/login"><button type="button" class="btn btn-outline-warning">Login</button>
+</Link></li>
+
             </ul>
           </div>
     </nav>

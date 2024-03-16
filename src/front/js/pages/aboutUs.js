@@ -8,8 +8,35 @@ export const AboutUs = ()=>{
         <div>
         <h1>Meet the Team</h1>
 
-        <div className="card">
-  <img src="..." className="card-img-top" alt="..."/>
+        <div className="d-flex p-4">
+
+
+        <div className="card bg-black">
+        <img src="..." class="card-img-top img-fluid" alt="Placeholder Image"/>
+  <div className="card-body">
+    <h5 className="card-title">Name:</h5>
+    <p className="card-text">Bio: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Role:</p>
+  </div>
+</div>
+        <div className="card bg-black">
+        <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" alt="Placeholder Image"/>
+  <div className="card-body">
+    <h5 className="card-title">Name:</h5>
+    <p className="card-text">Bio: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Role:</p>
+  </div>
+</div>
+        <div className="card bg-black">
+        <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" alt="Placeholder Image"/>
+  <div className="card-body">
+    <h5 className="card-title">Name:</h5>
+    <p className="card-text">Bio: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Role:</p>
+  </div>
+</div>
+        <div className="card bg-black">
+        <img src="https://via.placeholder.com/200x200" class="card-img-top img-fluid" alt="Placeholder Image"/>
   <div className="card-body">
     <h5 className="card-title">Name:</h5>
     <p className="card-text">Bio: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -17,7 +44,7 @@ export const AboutUs = ()=>{
   </div>
 </div>
 
-
+</div>
         
         
         </div>

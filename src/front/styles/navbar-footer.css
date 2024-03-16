@@ -4,13 +4,20 @@
     height: 100px;
   }
 
-.navbar-nav {
-  display: block;
-}
   
   .navbar-item {
     display: inline-block;
     margin-right: 10px;
+  }
+  .navbar-list {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  
+  .navbar-item:not(:last-child) {
+    border-right: 1px solid #ffffff; /* Adjust color as needed */
+    padding-right: 10px; /* Adjust spacing as needed */
   }
   
  li ,a {
