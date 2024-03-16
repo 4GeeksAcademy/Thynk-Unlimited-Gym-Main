@@ -10,8 +10,10 @@ import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
 import { MembershipViewPage } from "./pages/membershipView";
 import { Navbar } from "./component/navbar";
-import { Classes } from "./pages/eventScheduler";
+
 import { AboutUs } from "./pages/aboutUs";
+import ScheduleTable from "./pages/classes2";
+
 //create your first component
 const Layout = () => {
   //the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -30,7 +32,7 @@ const Layout = () => {
             <Route element={<Home />} path="/" />
             <Route element={<AboutUs />} path="/about" />
             <Route element={<Resources />} path="/resources" />
-            <Route element={<Classes />} path="/classes" />
+            <Route element={<ScheduleTable />} path="/classes" />
             <Route
               element={<MembershipViewPage />}
               path="/membershipView/:id"
