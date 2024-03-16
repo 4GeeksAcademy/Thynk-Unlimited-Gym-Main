@@ -17,10 +17,13 @@ export const Carousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     pauseOnHover: true,
     centerMode: true,
+    variableWidth: true,
+    adaptiveHeight: true,
     centerPadding: "60px",
+    
     responsive: [
       {
         breakpoint: 1024,
@@ -78,13 +81,16 @@ export const Carousel = () => {
     {
       name: `LeVar B.`,
       img: levar,
-      review: `From couch potato to fitness fanatic – unlimited thanks to this gym!`,
+      review: `From couch potato to fitness fanatic – unlimited thanks!`,
     },
   ];
 
   return (
     <div className="container w-3/4 m-auto">
       <div className="mt-20">
+        <h1 className="d-flex justify-content-center">
+          What Our Members Are Saying
+        </h1>
         <Slider {...settings}>
           {data.map((d, index) => (
             <div key={index} className="testimonial-card">

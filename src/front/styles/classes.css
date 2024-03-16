@@ -1,0 +1,483 @@
+.class-item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #e8c552;
+  margin: 20px;
+}
+
+.class-item .ci-pic img {
+  min-width: 100%;
+}
+
+.class-item .ci-text {
+  background: #000000;
+  position: relative;
+  padding: 10px 30px 26px 30px;
+  z-index: 1;
+}
+
+.class-item .ci-text:after {
+  position: absolute;
+  left: -5px;
+  top: -44px;
+  height: 100px;
+  width: 600px;
+  border-top: 4px solid #464646;
+  background: #0a0a0a;
+  content: "";
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.class-item .ci-text span {
+  color: #e8c552;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.class-item .ci-text h5 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.class-item .ci-text h4 {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.class-item .ci-text a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.1);
+  line-height: 46px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  position: absolute;
+  right: 30px;
+  bottom: 26px;
+}
+
+.class-timetable-section {
+  background: #000000;
+  margin-bottom: 150px;
+  margin-top: 25px;
+}
+
+.class-timetable-section.class-details-timetable {
+  padding-top: 0;
+}
+
+.class-details-timetable_title {
+  margin-bottom: 35px;
+}
+
+.class-details-timetable_title h5 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.class-timetable .ts-meta h5,
+.class-timetable .ts-meta span {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.class-timetable.filtering .ts-meta h5,
+.class-timetable.filtering .ts-meta span {
+  opacity: 0;
+}
+
+.class-timetable.filtering .ts-meta.show h5,
+.class-timetable.filtering .ts-meta.show span {
+  opacity: 1;
+}
+
+.class-timetable.details-timetable td h5 {
+  color: #ffffff1a;
+}
+
+.class-timetable.details-timetable td span {
+  color: #363636;
+}
+
+.class-timetable.details-timetable td.hover-dp h5 {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.class-timetable.details-timetable td.hover-dp span {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.class-timetable.details-timetable td.hover-dp:hover h5 {
+  color: #ffffff;
+}
+
+.class-timetable.details-timetable td.hover-dp:hover span {
+  color: #a9a9a9;
+}
+
+.class-timetable.details-timetable td.dark-bg {
+  background: #0a0a0a;
+}
+
+.class-timetable table {
+  border: 1px solid #363636;
+  text-align: center;
+}
+
+.class-timetable table thead {
+  border-bottom: 1px solid #363636;
+}
+
+.class-timetable table thead tr th {
+  font-size: 14px;
+  color: #000000;
+  background: #e8c552;
+  border-right: 1px solid #363636;
+  padding: 15px 0;
+  font-weight: 400;
+}
+
+.class-timetable table tbody tr td {
+  width: 146px;
+  padding: 35px 0;
+}
+
+.class-timetable table tbody tr td.class-time {
+  font-size: 12px;
+  color: #e8c552;
+  background: #000000;
+  border: 1px solid #363636;
+}
+
+.class-timetable table tbody tr td.dark-bg {
+  background: #090909;
+}
+
+.class-timetable table tbody tr td.hover-bg {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.class-timetable table tbody tr td.hover-bg:hover {
+  background: #e8c552;
+}
+
+.class-timetable table tbody tr td.blank-td {
+  position: relative;
+  overflow: hidden;
+}
+
+.class-timetable table tbody tr td.blank-td:after {
+  position: absolute;
+  left: -47px;
+  top: 59px;
+  width: 237px;
+  height: 1px;
+  background: #363636;
+  content: "";
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.class-timetable table tbody tr td h5 {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.class-timetable table tbody tr td span {
+  display: block;
+  font-size: 12px;
+  color: #a9a9a9;
+}
+
+/*---------------------
+  Class Details Section
+-----------------------*/
+
+.class-details-section {
+  background: #151515;
+  padding-bottom: 60px;
+}
+
+.class-details-text .cd-pic {
+  margin-bottom: 45px;
+}
+
+.class-details-text .cd-pic img {
+  min-width: 100%;
+}
+
+.class-details-text .cd-text {
+  margin-bottom: 33px;
+}
+
+.class-details-text .cd-text .cd-single-item h3 {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.class-details-text .cd-text .cd-single-item p {
+  color: #c4c4c4;
+}
+
+.class-details-text .cd-trainer .cd-trainer-pic img {
+  min-width: 100%;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text {
+  position: relative;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-title {
+  margin-bottom: 18px;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-title h4 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-title span {
+  font-size: 12px;
+  color: #aaaaaa;
+  text-transform: uppercase;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-social {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-social a {
+  display: inline-block;
+  font-size: 14px;
+  color: #c4c4c4;
+  margin-right: 9px;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-social a:last-child {
+  margin-right: 0;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text p {
+  color: #c4c4c4;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-info {
+  margin-top: 28px;
+  margin-bottom: 26px;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-info li {
+  font-size: 14px;
+  color: #c4c4c4;
+  list-style: none;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #252525;
+  margin-bottom: 10px;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-info li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.class-details-text .cd-trainer .cd-trainer-text .trainer-info li span {
+  color: #ffffff;
+  font-weight: 700;
+  width: 150px;
+  display: inline-block;
+}
+
+.sidebar-option {
+  padding-left: 40px;
+}
+
+.sidebar-option .so-categories {
+  margin-bottom: 40px;
+}
+
+.sidebar-option .so-categories .title {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.sidebar-option .so-categories ul li {
+  list-style: none;
+}
+
+.sidebar-option .so-categories ul li:hover a {
+  color: #e8c552;
+}
+
+.sidebar-option .so-categories ul li:hover a span {
+  color: #ffffff;
+}
+
+.sidebar-option .so-categories ul li a {
+  font-size: 14px;
+  color: #c4c4c4;
+  line-height: 40px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sidebar-option .so-categories ul li a span {
+  font-size: 12px;
+  float: right;
+}
+
+.sidebar-option .so-latest {
+  margin-bottom: 60px;
+}
+
+.sidebar-option .so-latest .title {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.sidebar-option .so-latest .latest-large {
+  height: 200px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sidebar-option .so-latest .latest-large .ll-text {
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.sidebar-option .so-latest .latest-large .ll-text h5 a {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.sidebar-option .so-latest .latest-large .ll-text ul li {
+  list-style: none;
+  font-size: 12px;
+  color: #888888;
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.sidebar-option .so-latest .latest-large .ll-text ul li:last-child {
+  margin-right: 0;
+}
+
+.sidebar-option .so-latest .latest-large .ll-text ul li:last-child:after {
+  display: none;
+}
+
+.sidebar-option .so-latest .latest-large .ll-text ul li:after {
+  position: absolute;
+  right: -16px;
+  top: 0;
+  content: "|";
+}
+
+.sidebar-option .so-latest .latest-item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.sidebar-option .so-latest .latest-item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-option .so-latest .latest-item .li-pic {
+  float: left;
+  margin-right: 20px;
+}
+
+.sidebar-option .so-latest .latest-item .li-text {
+  overflow: hidden;
+}
+
+.sidebar-option .so-latest .latest-item .li-text h6 a {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.sidebar-option .so-latest .latest-item .li-text .li-time {
+  display: inline-block;
+  font-size: 12px;
+  color: #888888;
+}
+
+.sidebar-option .so-banner {
+  height: 300px;
+  position: relative;
+}
+
+.sidebar-option .so-banner h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.sidebar-option .so-tags .title {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.sidebar-option .so-tags a {
+  display: inline-block;
+  font-size: 14px;
+  color: #c4c4c4;
+  padding: 10px 15px;
+  background: #252525;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}

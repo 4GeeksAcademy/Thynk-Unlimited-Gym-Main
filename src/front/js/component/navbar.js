@@ -19,7 +19,7 @@ export const Navbar = () => {
             <ul className="navbar-list">
               <li className="navbar-item"><Link to="/">Home</Link></li>
               
-              <li className="navbar-item"><Link to="about">About Us</Link></li>
+              <li className="navbar-item"><Link to="/about">About Us</Link></li>
               
               <li className="navbar-item"><Link to="/members">Members</Link></li>
               
@@ -29,7 +29,7 @@ export const Navbar = () => {
               
               <li className="navbar-item"><Link to="/shop">Shop</Link></li>
               
-              <li className="navbar-item"><Link to="/login"><button type="button" class="btn btn-outline-warning">Login</button></Link></li>
+              <li className="navbar-item"><Link to="/login"><button type="button" className="btn btn-outline-warning">Login</button></Link></li>
               
             </ul>
     </nav>

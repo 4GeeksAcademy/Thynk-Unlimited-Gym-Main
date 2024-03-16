@@ -9,18 +9,19 @@ import Resources from "./pages/resources";
 
 import { Footer } from "./component/footer";
 import injectContext from "./store/appContext";
-import { MembershipViewPage } from "./pages/";
+import { MembershipViewPage } from "./pages/membershipView";
 import { Navbar } from "./component/navbar";
 import { AboutUs } from "./pages/aboutUs";
-import { AboutUs } from "./pages/aboutUs";
+import { Classes } from "./pages/eventScheduler";
 
 //create your first component
 const Layout = () => {
-    //the basename is used when your project is published in a subdirectory and not in the root of the domain
-    // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
-    const basename = process.env.BASENAME || "";
+  //the basename is used when your project is published in a subdirectory and not in the root of the domain
+  // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
+  const basename = process.env.BASENAME || "";
 
-    if(!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL/ >;
+  if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "")
+    return <BackendURL />;
 
     return (
         <div>
@@ -30,14 +31,8 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Home />} path="/" />
                         <Route element={<AboutUs />} path="/about" />
-                        {/* <Route element={<Member />} path="/member" /> */}
-                        <Route element={<AboutUs />} path="/about" />
- Resources-MO
                         <Route element={<Resources />} path="/resources" />
-
-
                         <Route element={< MembershipViewPage/> } path="/membershipView/:id"/> 
-
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

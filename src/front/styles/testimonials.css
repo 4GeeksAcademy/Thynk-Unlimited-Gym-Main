@@ -18,8 +18,22 @@
 .testimonial-card {
   background-color: #000000;
   height: 600px;
-  width: auto;
   color: rgb(255, 255, 255);
+}
+
+.slick-slide .slick-slide:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.slick-slide:hover > .slick-slide:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.slick-slide {
+  width: 290px;
+  height: auto;
+  min-height: 1px;
 }
 
 .testimonial-image-container {
@@ -28,14 +42,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .testimonial-image {
   height: 150px; /* Adjust height as needed */
   width: 150px; /* Adjust width as needed */
   border-radius: 50%;
+  border: solid;
+  border-color: white;
 }
 
 .testimonial-content {
@@ -43,13 +59,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   padding: 10px;
+  padding-bottom: 0;
   border-left: 1px solid #ffffff7d;
   border-right: 1px solid #ffffff7d;
   border-bottom: 1px solid #ffffff7d;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .testimonial-name {
@@ -60,7 +76,7 @@
 .testimonial-review {
   text-align: center;
   font-family: Georgia, serif;
-  font-size: 15px;
+  font-size: 12px;
   font-style: italic;
   margin: 0.25em 0;
   padding: 0.35em 40px;
@@ -80,14 +96,5 @@
   color: #7a7a7a;
 }
 
-.testimonial-review cite {
-  color: #999999;
-  font-size: 14px;
-  display: block;
-  margin-top: 5px;
-}
 
-.testimonial-review cite:before {
-  content: "\2014 \2009";
-}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
