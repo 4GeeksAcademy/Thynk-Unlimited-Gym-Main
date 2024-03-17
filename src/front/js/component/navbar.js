@@ -5,7 +5,7 @@ import "../../styles/navbar-footer.css";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-dark navbar-expand-md align-items-center">
+    <nav className="navbar navbar-expand-md align-items-center">
       {/* Logo */}
       <div className="navbar-brand navbar-left">
         <Link to="/">
@@ -47,7 +47,7 @@ export const Navbar = () => {
 
         <li className="navbar-item">
           <Link to="/login">
-            <button type="button" className="btn btn-outline-warning">
+            <button type="button" className="login-btn btn btn-bg-none">
               Login
             </button>
           </Link>

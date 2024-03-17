@@ -13,6 +13,7 @@ import { Navbar } from "./component/navbar";
 
 import { AboutUs } from "./pages/aboutUs";
 import ScheduleTable from "./pages/classes2";
+import { Login } from "./pages/login";
 
 //create your first component
 const Layout = () => {
@@ -37,6 +38,7 @@ const Layout = () => {
               element={<MembershipViewPage />}
               path="/membershipView/:id"
             />
+            <Route element={<Login />} path="/login" />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
           <Footer />

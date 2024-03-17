@@ -1,14 +1,12 @@
-body {
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(https://www.shutterstock.com/image-illustration/gym-weights-under-strong-dramatic-600nw-472696720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .class-header {
   color: #e8c552;
@@ -48,20 +46,20 @@ td:hover:not(.time-slot) {
   color: #000000; /* Set font color on hover */
 }
 
-.btn {
+#btn {
   background: none;
   border: none;
   cursor: pointer;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  text-align: center; /* Center the text */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #e8c552;
 }
 
-.btn h5 {
-  margin-bottom: 5px; /* Add spacing between the elements */
+#btn:hover {
+  color: black;
 }
 
 .btn span {
@@ -76,6 +74,3 @@ table thead tr th {
   font-weight: 400;
   width: 150px;
 }
-
-
-

@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Context } from "../store/appContext";
 import "../../styles/classes2.css";
 import { ScaleLoader } from "react-spinners";
+import "animate.css";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ScheduleTable = () => {
   const days = [
@@ -29,37 +33,16 @@ const ScheduleTable = () => {
     { name: "No Class", trainer: "" },
   ];
 
-  //  Loading effect
   const [loading, setLoading] = useState(false);
+  const [schedule, setSchedule] = useState([]);
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
-  const ScheduleRow = ({ day, timeSlot, workout }) => (
-    <tr>
-      <td></td>
-      <td>{day}</td>
-      <td>{timeSlot}</td>
-      <td>
-        {workout.name}
-        {workout.trainer}
-      </td>
-    </tr>
-  );
-
-  // Function to get a random workout
-  const getRandomWorkout = () => {
-    return workouts[Math.floor(Math.random() * workouts.length)];
-  };
-
-  // Use state to manage the schedule
-  const [schedule, setSchedule] = useState([]);
-
-  // Populate the schedule
   useEffect(() => {
     const populatedSchedule = [];
     days.forEach((day) => {
@@ -71,14 +54,45 @@ const ScheduleTable = () => {
     setSchedule(populatedSchedule);
   }, []);
 
+  const getRandomWorkout = () =>
+    workouts[Math.floor(Math.random() * workouts.length)];
+
+  // Components
+  const ScheduleRow = ({ day, timeSlot, workout }) => (
+    <tr>
+      <td></td>
+      <td>{day}</td>
+      <td>{timeSlot}</td>
+      <td>{`${workout.name} ${workout.trainer}`}</td>
+    </tr>
+  );
+
+  const { store, actions } = useContext(Context);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = (e, workout) => {
+    e.preventDefault();
+    actions.login(email, password);
+    console.log(store.token);
+  };
+
+  if (store.token && store.token !== "" && store.token !== undefined) {
+    navigate("/login");
+  }
+
   return (
     <div className="app">
       {loading ? (
         <ScaleLoader color="#e8c552" height={75} width={8} />
       ) : (
         <div className="class-timetable">
-          <h1 className="class-header">Our Classes</h1>
-          <table>
+          <h1 className="class-header animate__animated animate__slideInLeft">
+            Our Classes
+          </h1>
+          <h4>Sign up for a class today!</h4>
+          <table className="animate__animated animate__jackInTheBox">
             <thead>
               <tr>
                 <th></th>
@@ -98,11 +112,15 @@ const ScheduleTable = () => {
                       (slot) => slot.day === day && slot.timeSlot === timeSlot
                     );
                     return (
-                      <td className="item-slot" key={index}>
+                      <td className="item-slot" key={`${day}-${index}`}>
                         {slot && slot.workout.name !== "No Class" ? (
-                          <button className="btn">
-                            <h5>{`${slot.workout.name}`}</h5>
-                            <span>{`${slot.workout.trainer}`}</span>
+                          <button
+                            className="btn"
+                            id="btn"
+                            onClick={(e) => handleLogin(e, slot.workout)}
+                          >
+                            <h5>{slot.workout.name}</h5>
+                            <span>{slot.workout.trainer}</span>
                           </button>
                         ) : (
                           "No Class"
@@ -114,7 +132,6 @@ const ScheduleTable = () => {
               ))}
             </tbody>
           </table>
-          
         </div>
       )}
     </div>
