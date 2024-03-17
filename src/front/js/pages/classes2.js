@@ -77,7 +77,7 @@ const ScheduleTable = () => {
         <ScaleLoader color="#e8c552" height={75} width={8} />
       ) : (
         <div className="class-timetable">
-          <h1>Our Classes</h1>
+          <h1 className="class-header">Our Classes</h1>
           <table>
             <thead>
               <tr>
@@ -114,6 +114,7 @@ const ScheduleTable = () => {
               ))}
             </tbody>
           </table>
+          
         </div>
       )}
     </div>

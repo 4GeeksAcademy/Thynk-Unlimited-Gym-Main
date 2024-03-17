@@ -8,15 +8,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
 }
 
-h1 {
+.class-header {
   color: #e8c552;
 }
 
 .class-timetable {
-  text-align: center; /* Aligns all content in the parent container center */
+  text-align: center;
+  margin-top: 100px;
 }
 
 table {
@@ -36,7 +36,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #000000;
+  background-color: #00000000;
 }
 
 td {
@@ -76,3 +76,6 @@ table thead tr th {
   font-weight: 400;
   width: 150px;
 }
+
+
+
