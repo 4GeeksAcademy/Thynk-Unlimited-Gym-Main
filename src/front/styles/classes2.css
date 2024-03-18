@@ -1,4 +1,4 @@
-.app {
+.classesApp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,14 +7,16 @@
   background-size: cover;
 }
 
-
+#loader {
+  margin: 250px;
+}
 .class-header {
   color: #e8c552;
 }
 
 .class-timetable {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 table {

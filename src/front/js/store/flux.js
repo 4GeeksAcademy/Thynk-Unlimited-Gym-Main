@@ -125,6 +125,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           return true;
         } catch (error) {
           console.log("login error");
+          console.log("Error:", error.message);
         }
       },
     },

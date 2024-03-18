@@ -5,6 +5,7 @@ import { ScaleLoader } from "react-spinners";
 import "animate.css";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ScheduleTable = () => {
   const days = [
@@ -40,7 +41,7 @@ const ScheduleTable = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
 
   useEffect(() => {
@@ -83,16 +84,18 @@ const ScheduleTable = () => {
   }
 
   return (
-    <div className="app">
+    <div className="classesApp">
       {loading ? (
-        <ScaleLoader color="#e8c552" height={75} width={8} />
+        <ScaleLoader id="loader" color="#e8c552" height={75} width={8} />
       ) : (
         <div className="class-timetable">
           <h1 className="class-header animate__animated animate__slideInLeft">
             Our Classes
           </h1>
-          <h4>Sign up for a class today!</h4>
-          <table className="animate__animated animate__jackInTheBox">
+          <h4 className="animate__animated animate__slideInRight">
+            Sign up for a class today!
+          </h4>
+          <table className="animate__animated animate__rotateInUpRight animate__delay-1s">
             <thead>
               <tr>
                 <th></th>
@@ -114,14 +117,12 @@ const ScheduleTable = () => {
                     return (
                       <td className="item-slot" key={`${day}-${index}`}>
                         {slot && slot.workout.name !== "No Class" ? (
-                          <button
-                            className="btn"
-                            id="btn"
-                            onClick={(e) => handleLogin(e, slot.workout)}
-                          >
-                            <h5>{slot.workout.name}</h5>
-                            <span>{slot.workout.trainer}</span>
-                          </button>
+                          <Link to="/login">
+                            <button className="btn" id="btn">
+                              <h5>{slot.workout.name}</h5>
+                              <span>{slot.workout.trainer}</span>
+                            </button>
+                          </Link>
                         ) : (
                           "No Class"
                         )}
