@@ -33,6 +33,7 @@ export const Navbar = () => {
               <li className="navbar-item"><Link to="/login"><button type="button" className="btn btn-outline-warning">Login</button></Link></li>
               
             </ul>
+            </div>
     </nav>
   );
 };
