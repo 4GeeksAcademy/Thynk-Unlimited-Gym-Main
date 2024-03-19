@@ -11,7 +11,7 @@ export const AboutUs = ()=>{
 
   
     return (
-      <div className="about-us container d-flex flex-column justify-content-center align-items-center p-5 my-3">
+        <div>
 
 <div className="">
 
@@ -25,9 +25,10 @@ export const AboutUs = ()=>{
         </p>
         </div>
         <div>
-        <h2 className="text-center my-5">Meet the Team</h2>
+        <h1>Meet the Team</h1>
 
-        <div className="d-flex justify-content-between my-3">
+        <div className="d-flex p-4">
+
 
 
         <div className="card card col-3 hvr-grow">
@@ -82,6 +83,7 @@ export const AboutUs = ()=>{
 </div>
         <div className="card card-about col-3 hvr-grow">
         <img src="https://origympersonaltrainercourses.co.uk/files/img_cache/30647/1920_1659430668_ptmalepose1.png?1659432239" className="card-img-top img-fluid card-img" alt="Placeholder Image"/>
+
   <div className="card-body">
   <input id="read-more-3" type="checkbox"/>
     <h5 className="card-title">Name:James Anderson</h5>
@@ -106,6 +108,7 @@ export const AboutUs = ()=>{
 </div>
         <div className="card card-about col-3 hvr-grow">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl2upJG-KyMcv5fFDfeG9SYG1CY9oa9wWMtCA8XXhEsQ&s" className="card-img-top img-fluid card-img" alt="Placeholder Image"/>
+
   <div className="card-body">
   <input className="read-more-4" type="checkbox"/>
     <h5 className="card-title">Name:Max Johnson</h5>
@@ -128,10 +131,16 @@ export const AboutUs = ()=>{
         </a></p>
   </div>
 </div>
+
+</div>
+        
         
         </div>
-        </div>
-      
+
+
+        <h2>Our Mission</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa? At sequi voluptates fuga dolorem rerum iste! Ea deleniti nam sapiente placeat magnam eaque, harum hic expedita cum culpa. Quis.</p>
+
         <h2>Locations</h2>
 <div className="d-flex my-3 ">
 
