@@ -74,6 +74,7 @@
 		]
 	},
 	"dependencies": {
+		"hover.css": "^2.3.2",
 		"jquery": "^3.7.1",
 		"node-sass": "^9.0.0",
 		"owl.carousel": "^2.3.4",
