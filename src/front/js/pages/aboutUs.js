@@ -11,8 +11,13 @@ export const AboutUs = ()=>{
     return (
       <div className="about-us container d-flex flex-column justify-content-center align-items-center p-5 my-3">
 
+<div className="">
+        <h1 className="text-center my-5">Our Mission</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa? At sequi voluptates fuga dolorem rerum iste! Ea deleniti nam sapiente placeat magnam eaque, harum hic expedita cum culpa. Quis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa? At sequi voluptates fuga dolorem rerum iste! Ea deleniti nam sapiente placeat magnam eaque, harum hic expedita cum culpa. Quis.</p>
+        </div>
         <div>
-        <h1 className="text-center my-5">Meet the Team</h1>
+        <h2 className="text-center my-5">Meet the Team</h2>
 
         <div className="d-flex justify-content-between my-3">
 
@@ -100,13 +105,7 @@ export const AboutUs = ()=>{
         
         </div>
         </div>
-
-        <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa? At sequi voluptates fuga dolorem rerum iste! Ea deleniti nam sapiente placeat magnam eaque, harum hic expedita cum culpa. Quis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa? At sequi voluptates fuga dolorem rerum iste! Ea deleniti nam sapiente placeat magnam eaque, harum hic expedita cum culpa. Quis.</p>
-
-        
-
+      
         <h2>Locations</h2>
 <div className="d-flex my-3">
         <div className="my-4">
