@@ -25,7 +25,6 @@ export const Navbar = () => {
           <button type="button" className="btn btn-outline-warning"><Link to="/login">Login</Link></button>
         </li>
       </ul>
-            </div>
     </nav>
   );
 };
