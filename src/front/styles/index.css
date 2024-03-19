@@ -5,7 +5,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
 body {
   background: black;
   color: white;
@@ -14,4 +13,5 @@ body {
   font-weight: 600;
   font-style: normal;
 }
+
 

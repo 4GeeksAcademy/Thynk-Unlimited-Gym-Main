@@ -5,7 +5,6 @@ import "../../styles/login.css";
 import { FaFacebook, FaGoogle, FaLinkedinIn } from "react-icons/fa";
 import { ScaleLoader } from "react-spinners";
 import "animate.css";
-import { AlignCenter } from "react-bootstrap-icons";
 
 export const Login = () => {
   const { store, actions } = useContext(Context);

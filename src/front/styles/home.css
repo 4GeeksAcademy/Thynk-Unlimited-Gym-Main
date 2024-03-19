@@ -6,10 +6,16 @@
     on that page only (the ones not reused in other pages).
 */
 
-
 /* Set left margin for the button */
-.joinusbutton{
-    margin-left: auto!important;
-    align-items: left;
-  }
-  
+.joinusbutton {
+  margin-left: auto !important;
+  align-items: left;
+}
+
+/* loading screen */
+#loader {
+  margin: 250px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
