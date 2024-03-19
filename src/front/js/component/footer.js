@@ -3,6 +3,7 @@ import "../../styles/navbar-footer.css";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const Footer = () => (
   <footer className="">
@@ -14,7 +15,7 @@ export const Footer = () => (
             <a href="https://www.gatorade.com/">Gatorade</a>
           </li>
           <li>
-            <a href="">Lyfetime Fitness Apparl</a>
+            <a href="">Lyfetime Fitness Apparel</a>
           </li>
           <li>
             <a href="">Cramps for Champs</a>
@@ -39,6 +40,9 @@ export const Footer = () => (
         </a>
         <a href="">
           <FaFacebook size="2rem" />
+          </a>
+        <a href="">
+          <MdEmail size="2rem" />
         </a>
       </div>
     </div>

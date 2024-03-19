@@ -1,5 +1,10 @@
 import React from "react";
 import "../../styles/index.css"
+import "../../styles/aboutUs.css"
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 
 export const AboutUs = ()=>{
