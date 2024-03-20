@@ -46,7 +46,6 @@ const Layout = () => {
       </BrowserRouter>
     </div>
   );
-
 };
 
 export default injectContext(Layout);
