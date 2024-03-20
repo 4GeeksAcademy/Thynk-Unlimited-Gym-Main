@@ -1,3 +1,5 @@
+/* Common styles for all screen sizes */
+
 /* Login Header */
 .login-hdr {
   font-weight: bold;
@@ -59,21 +61,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   padding: 50px;
   height: 100%;
   text-align: center;
   border-radius: 10px;
-  width: fit-content;
+  max-width: 300px;
 }
 
 /* Login Container */
 #login-container {
   width: fit-content;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -108,7 +107,7 @@
 .area {
   background: #000000;
   background: -webkit-linear-gradient(to left, #181717, #37373d);
-  width: 100%;
+
   height: 100%;
 }
 
@@ -156,6 +155,7 @@
   animation-delay: 4s;
 }
 
+/* Add more variations below */
 .circles .squares:nth-child(4) {
   left: 40%;
   width: 60px;
@@ -208,53 +208,12 @@
   animation-delay: 0s;
   animation-duration: 11s;
 }
-
 .circles .squares:nth-child(11) {
-  right: 10%;
-  width: 100px;
-  height: 100px;
-  animation-delay: 2s;
-  animation-duration: 18s;
-}
-
-.circles .squares:nth-child(12) {
-  right: 22%;
-  width: 100px;
-  height: 100px;
-  animation-delay: 2s;
-  animation-duration: 18s;
-}
-
-.circles .squares:nth-child(13) {
-  right: 44%;
-  width: 60px;
-  height: 60px;
-  animation-delay: 2s;
-  animation-duration: 18s;
-}
-
-.circles .squares:nth-child(14) {
-  right: 62%;
-  width: 100px;
-  height: 100px;
-  animation-delay: 2s;
-  animation-duration: 18s;
-}
-
-.circles .squares:nth-child(15) {
-  right: 85%;
-  width: 100px;
-  height: 100px;
-  animation-delay: 2s;
-  animation-duration: 18s;
-}
-
-.circles .squares:nth-child(16) {
-  right: 90%;
-  width: 60px;
-  height: 60px;
-  animation-delay: 2s;
-  animation-duration: 18s;
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
 }
 
 /* Keyframes Animation */
@@ -268,5 +227,28 @@
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+  }
+}
+
+/* Media queries for responsive design */
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+  #loader {
+    margin: 50px;
+  }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #loader {
+    margin: 150px;
+  }
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+  #loader {
+    margin: 250px;
   }
 }

@@ -27,7 +27,7 @@ export const Login = () => {
 
   useEffect(() => {
     if (store.token && store.token !== "" && store.token !== undefined) {
-      navigate("/");
+      navigate("/login");
     }
   }, [store.token, navigate]);
 
@@ -66,65 +66,71 @@ const SignInForm = ({ handleLogin }) => {
   };
 
   return (
-    <div className="area">
-      <div className="login-container" id="login-container">
-        <div className="circles d-flex justify-content-center">
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-          <li className="squares"></li>
-        </div>
-
-        <div className="form-container sign-in-container animate__animated animate__rotateInDownLeft">
-          <form onSubmit={handleSignIn}>
-            <h1 className="login-hdr">Sign in</h1>
-            <div className="social-container d-flex justify-content-center w-auto align-items-center">
-              <button className="social mx-2">
-                <FaFacebook />
-              </button>
-              <button className="social mx-2">
-                <FaGoogle />
-              </button>
-              <button className="social mx-2">
-                <FaLinkedinIn />
-              </button>
+    <div>
+      <div className="circles">
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+        <li className="squares"></li>
+      </div>
+      <div className="area d-flex justify-content-center">
+        <div className="d-lg-inline-flex d-flex justify-content-center align-items-center">
+          <div
+            className="login-container d-flex justify-content-center text-center align-items-center"
+            id="login-container"
+          >
+            <div className="form-container sign-in-container animate__animated animate__rotateInDownLeft">
+              <form onSubmit={handleSignIn}>
+                <h1 className="login-hdr">Sign in</h1>
+                <div className="social-container">
+                  <button className="social mx-2">
+                    <FaFacebook />
+                  </button>
+                  <button className="social mx-2">
+                    <FaGoogle />
+                  </button>
+                  <button className="social mx-2">
+                    <FaLinkedinIn />
+                  </button>
+                </div>
+                <span id="other-p">or use your account</span>
+                <input
+                  id="signInForm"
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                  id="signInForm"
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <Link to="/forgot-password" id="other-p" p-2>
+                  Forgot your password?
+                </Link>
+                <div className="d-flex justify-content-end">
+                  <button className="ghost p-2 btn btn-bg-dark" type="submit">
+                    Sign In
+                  </button>
+                </div>
+              </form>
             </div>
-            <span id="other-p">or use your account</span>
-            <input
-              id="signInForm"
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              id="signInForm"
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <Link to="/forgot-password" id="other-p" p-2>
-              Forgot your password?
-            </Link>
-            <div className="d-flex justify-content-end">
-              <button className="ghost p-2 btn btn-bg-dark" type="submit">
-                Sign In
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
