@@ -1,0 +1,77 @@
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+  }
+
+  .card{
+    background-color: #E8C552;
+    color: black;
+    margin-right: 1.5rem;
+    width: 250px;
+}
+
+h1 {
+    color: #E8C552;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+input[type="checkbox"] {
+ display: none;
+}
+
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  background-color: black;
+  color: #E8C552;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.hidden {
+  display: none;
+}
+
+#read-more-1:checked ~ .hidden {
+  display: block;
+}
+#read-more-1:checked ~ label {
+  display: none;
+}
+#read-more-2:checked ~ .hidden {
+  display: block;
+}
+#read-more-2:checked ~ label {
+  display: none;
+}
+#read-more-3:checked ~ .hidden {
+  display: block;
+}
+#read-more-3:checked ~ label {
+  display: none;
+}
+#read-more-4:checked ~ .hidden {
+  display: block;
+}
+#read-more-4:checked ~ label {
+  display: none;
+}

@@ -5,6 +5,7 @@ import "../../styles/navbar-footer.css";
 
 export const Navbar = () => {
   return (
+
     <nav className="navbar navbar-expand-md align-items-center">
       {/* Logo */}
       <div className="navbar-brand navbar-left">
@@ -51,8 +52,5 @@ export const Navbar = () => {
               Login
             </button>
           </Link>
-        </li>
-      </ul>
-    </nav>
   );
 };

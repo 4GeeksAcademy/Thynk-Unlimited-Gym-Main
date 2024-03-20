@@ -23,6 +23,7 @@ function Resources() {
 
   return (
     <div>
+
       {loading ? (
         <div className="loading-spinner">
           <ScaleLoader id="loader" color="#e8c552" height={75} width={8} />
@@ -97,3 +98,4 @@ function Resources() {
 }
 
 export default Resources;
+
