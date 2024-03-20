@@ -1,0 +1,78 @@
+.classesApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://www.shutterstock.com/image-illustration/gym-weights-under-strong-dramatic-600nw-472696720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#loader {
+  margin: 250px;
+}
+.class-header {
+  color: #e8c552;
+}
+
+.class-timetable {
+  text-align: center;
+  margin-top: 75px;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  margin: 25px auto 150px; /* Set top and bottom margins and auto for left and right */
+  border: 1px solid #363636;
+  text-align: center; /* Aligns all content in the table center */
+  width: 75%; /* Adjust the width as needed */
+}
+
+th,
+td {
+  border: 1px solid #dddddd71;
+  text-align: center; /* Aligns the content in table cells center */
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #00000000;
+}
+
+td {
+  color: #e8c552; /* Set default font color */
+}
+
+td:hover:not(.time-slot) {
+  background-color: #e8c552;
+  color: #000000; /* Set font color on hover */
+}
+
+#btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e8c552;
+}
+
+#btn:hover {
+  color: black;
+}
+
+.btn span {
+  color: #5e5e5e; /* Light gray color for the trainer name */
+}
+
+table thead tr th {
+  font-size: 18px;
+  color: #000000;
+  background: #e8c552;
+  border-right: 1px solid #363636;
+  font-weight: 400;
+  width: 150px;
+}

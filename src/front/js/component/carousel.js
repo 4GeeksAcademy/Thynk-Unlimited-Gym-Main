@@ -106,5 +106,6 @@ export const Carousel = () => {
         </Slider>
       </div>
     </div>
+    
   );
 };
