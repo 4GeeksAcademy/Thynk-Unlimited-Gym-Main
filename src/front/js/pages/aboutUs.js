@@ -11,9 +11,9 @@ export const AboutUs = ()=>{
 
   
     return (
-        <div>
+        <div className="container d-flex flex-column align-content-center">
 
-<div className="">
+<div>
 
         <h1 className="text-center my-5">Our Mission</h1>
         <p>  Our mission at Thynk Unlimited is to lead a fitness revolution, transforming the way people perceive health by integrating physical vitality with mental wellness.Our gym serves as a haven for inclusivity, welcoming individuals of all backgrounds and abilities. Through innovative programs and personalized coaching, we empower our members to not only achieve their fitness aspirations but also enhance cognitive health, fostering clarity, focus, and emotional resilience.
@@ -25,7 +25,7 @@ export const AboutUs = ()=>{
         </p>
         </div>
         <div>
-        <h1>Meet the Team</h1>
+        <h1 className="text-center my-5">Meet the Team</h1>
 
         <div className="d-flex p-4">
 
@@ -138,10 +138,7 @@ export const AboutUs = ()=>{
         </div>
 
 
-        <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa? At sequi voluptates fuga dolorem rerum iste! Ea deleniti nam sapiente placeat magnam eaque, harum hic expedita cum culpa. Quis.</p>
-
-        <h2>Locations</h2>
+        <h2 className="text-center my-5">Locations</h2>
 <div className="d-flex my-3 ">
 
         <div className="my-4 hvr-grow">
