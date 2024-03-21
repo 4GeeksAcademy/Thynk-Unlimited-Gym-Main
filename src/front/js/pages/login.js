@@ -27,7 +27,7 @@ export const Login = () => {
 
   useEffect(() => {
     if (store.token && store.token !== "" && store.token !== undefined) {
-      navigate("/login");
+      navigate("/manage");
     }
   }, [store.token, navigate]);
 

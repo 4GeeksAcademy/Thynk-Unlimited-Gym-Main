@@ -37,12 +37,9 @@ export const Navbar = () => {
             <Link to="/resources">Resources</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/shop">Shop</Link>
-          </li>
-          <li className="navbar-item">
             <Link to="/login">
               <button type="button" className="login-btn btn btn-bg-none">
-                Login
+                LOGIN
               </button>
             </Link>
           </li>
