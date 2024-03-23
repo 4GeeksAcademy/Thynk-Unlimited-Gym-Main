@@ -1,6 +1,10 @@
+import { data, error } from "jquery";
+
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
+      members: [],
+      token: null,
       memberships: [
         {
           id: 1,
@@ -54,6 +58,24 @@ const getState = ({ getStore, getActions, setStore }) => {
     },
     actions: {
       // Use getActions to call a function within a fuction
+
+      getUsers: async () => {
+        const store = getStore();
+        try {
+          const resp = await fetch(process.env.BACKEND_URL + "/api/user", {
+            headers: {
+              Authorization: "Bearer " + store.token,
+            },
+          });
+          const data = await resp.json();
+          console.log(data, "this is from the user");
+          setStore({ members: data });
+          return data;
+        } catch (error) {
+          console.log("error loading user", error);
+        }
+      },
+
       syncSessionToken: () => {
         const token = sessionStorage.getItem("token");
         if (token && token !== "" && token !== undefined) {
