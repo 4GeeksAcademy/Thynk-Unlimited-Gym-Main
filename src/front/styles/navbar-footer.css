@@ -61,3 +61,40 @@ footer {
 .login-btn {
   background-color: #e8c552;
 }
+
+/* New CSS - footer */
+
+/* .footer-container {
+  margin: 0 100px; 
+} */
+
+h5::after {
+  border-bottom: 1px solid white; /* Adjust the border color and style as needed */
+  content: '';
+  display: block;
+  margin-top: 15px; /* Adjust the space between the line and the content */
+  margin-bottom: 15px;
+
+} 
+
+.footer-social .social-icon a:hover {
+  color: #e8c552!important; /* Use !important to override other styles if needed */
+}
+
+.footer-container h5:hover {
+  color: #e8c552;
+}
+
+.footer-item-partners {
+  margin-left: 155px; /* Adjust the margin as needed */
+}
+
+.footer-social {
+  margin-right: 155px; /* Adjust the margin as needed */
+}
+.footer-item h5 {
+  position: relative;
+}
+.footer-social .social-icon a {
+  border-radius: 50%;
+}
