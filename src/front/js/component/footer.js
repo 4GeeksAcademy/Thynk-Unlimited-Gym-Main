@@ -1,50 +1,76 @@
 import React from "react";
 import "../../styles/navbar-footer.css";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { RiFacebookCircleLine } from "react-icons/ri";
+import { MdOutlineEmail } from "react-icons/md";
 
 export const Footer = () => (
-  <footer className="">
-    <div className="footer-main d-flex justify-content-between align-content-center">
-      <div className="footer-item">
+  <footer className="footer-container">
+    <div className="footer-main d-flex flex-wrap">
+      {/* Footer section for displaying partners */}
+      <div className="footer-item-partners" style={{ width: '25%' }}>
         <ul>
-          <p>Our Partners:</p>
-          <li>
-            <a href="https://www.gatorade.com/">Gatorade</a>
+          <h5 className="our-partners" style={{ textAlign: 'left' }}> Our Partners</h5>
+          <li style={{ fontWeight: 'normal' }}>
+            <p href="https://www.gatorade.com/">Gatorade</p>
           </li>
-          <li>
-            <a href="">Lyfetime Fitness Apparel</a>
+          <li style={{ fontWeight: 'normal' }}>
+            <p href="">Lyfetime Fitness Apparel</p>
           </li>
-          <li>
-            <a href="">Cramps for Champs</a>
+          <li style={{ fontWeight: 'normal' }}>
+            <p href="">Cramps for Champs</p>
           </li>
         </ul>
       </div>
 
-      <div className="footer-item">
-        <p>Main Office:</p>
-        <p>Address: 2358 S. Cardio Ave, Chicago,Il</p>
-        <p>Phone: (773)555-0000</p>
-        <p>Email: thynkgroup@thynkunlimited.com</p>
+      {/* Footer section for contact information */}
+      <div className="footer-item-contact" style={{ width: '25%' }}>
+        <h5 className="main-office" style={{ textAlign: 'left' }}> Main Office</h5>
+        <p>Address:2358 S. Cardio Ave, Chicago, IL</p>
+        <p>Phone:(773) 555-0000</p>
+        <p>Email:thynkgroup@thynkunlimited.com</p>
       </div>
 
-      <div className="footer-item">
-        <p>Connect with Us!</p>
-        <a href="">
-          <FaSquareXTwitter size="2rem" />
-        </a>
-        <a href="">
-          <FaInstagramSquare size="2rem" />
-        </a>
-        <a href="">
-          <FaFacebook size="2rem" />
-          </a>
-        <a href="">
-          <MdEmail size="2rem" />
-        </a>
+      {/* Footer section for newsletter */}
+      <div className="footer-newsletter" style={{ flex: '1' }}>
+        <h5 className="subscribe-newsletter2" style={{ textAlign: 'left' }}> Subscribe to Our Newsletter</h5>
+        {/* Add your newsletter input fields or subscription form here */}
+      </div>
+
+      {/* Footer section for social */}
+      <div className="footer-social" style={{ width: '25%' }}>
+        <h5 className="let's-connect" style={{ textAlign: 'left' }}> Let's Connect</h5>
+        <div>
+          <span className="social-icon" style={{ marginRight: '5px' }}>
+            <a href="">
+              <FaInstagram size="2rem" />
+            </a>
+          </span>
+          <span className="social-icon" style={{ marginRight: '5px' }}>
+            <a href="">
+              <RiFacebookCircleLine size="2rem" />
+            </a>
+          </span>
+          <span className="social-icon" style={{ marginRight: '5px' }}>
+            <a href="">
+              <FaXTwitter size="2rem" />
+            </a>
+          </span>
+          <span className="social-icon" style={{ marginRight: '5px' }}>
+            <a href="">
+              <MdOutlineEmail size="2rem" />
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   </footer>
-);
+)
+
+  
+
+
+
+
+
