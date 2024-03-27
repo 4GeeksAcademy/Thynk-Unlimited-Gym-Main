@@ -64,37 +64,77 @@ footer {
 
 /* New CSS - footer */
 
-/* .footer-container {
-  margin: 0 100px; 
-} */
-
-h5::after {
-  border-bottom: 1px solid white; /* Adjust the border color and style as needed */
-  content: '';
-  display: block;
-  margin-top: 15px; /* Adjust the space between the line and the content */
-  margin-bottom: 15px;
-
-} 
 
 .footer-social .social-icon a:hover {
   color: #e8c552!important; /* Use !important to override other styles if needed */
 }
 
-.footer-container h5:hover {
+.footer-container .footer-item-contact h5:hover,
+.footer-container .footer-item-partners h5:hover,
+.footer-container .footer-newsletter h5:hover,
+.footer-container .footer-social h5:hover {
   color: #e8c552;
 }
 
-.footer-item-partners {
-  margin-left: 155px; /* Adjust the margin as needed */
+.footer-item-partners,
+.footer-item-contact,
+.footer-newsletter,
+.footer-social {
+  margin-left: 50px; /* Adjust the margin as needed */
+  margin-right: 50px; /* Adjust the margin as needed */
 }
 
 .footer-social {
-  margin-right: 155px; /* Adjust the margin as needed */
+  margin-left: 80px;
 }
+
 .footer-item h5 {
   position: relative;
 }
-.footer-social .social-icon a {
-  border-radius: 50%;
+.footer-item-partners h5::after {
+  border-bottom: 1px solid white; /* Adjust the border color and style as needed */
+  content: '';
+  display: block;
+  margin-top: 15px; /* Adjust the space between the line and the content */
+  margin-bottom: 15px;
+  margin-right: 50px;
+  width: 70%; /* Adjust the width of the line for .footer-item-partners */
+}
+
+.footer-item-contact h5::after {
+  border-bottom: 1px solid white; /* Adjust the border color and style as needed */
+  content: '';
+  display: block;
+  margin-top: 15px; /* Adjust the space between the line and the content */
+  margin-bottom: 15px;
+  margin-right: 50px;
+  width: 80%; /* Adjust the width of the line for .footer-item-contact */
+}
+
+.footer-newsletter2 h5::after {
+  border-bottom: 1px solid white; /* Adjust the border color and style as needed */
+  content: '';
+  display: block;
+  margin-top: 15px; /* Adjust the space between the line and the content */
+  margin-bottom: 15px;
+  margin-right: 50px;
+  width: 80%; /* Adjust the width of the line for .footer-newsletter */
+}
+
+.footer-social h5::after {
+  border-bottom: 1px solid white; /* Adjust the border color and style as needed */
+  content: '';
+  display: block;
+  margin-top: 15px; /* Adjust the space between the line and the content */
+  margin-bottom: 15px;
+  margin-right: 50px;
+  width: 40%; /* Adjust the width of the line for .footer-social */
+}
+
+.footer-social {
+  margin-top:20px;
+}
+.footer-item-contact p {
+  margin-right: 10px; /* Add space between contact information */
+  font-weight: normal; /* Set font weight to normal */
 }
