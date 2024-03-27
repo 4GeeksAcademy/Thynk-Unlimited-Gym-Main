@@ -5,52 +5,35 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { ScaleLoader } from "react-spinners";
 import "animate.css";
 
 export const AboutUs = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-
   return (
     <div>
       <div className="">
-        {loading ? (
-          <div className="loading-spinner">
-            <ScaleLoader id="loader" color="#e8c552" height={75} width={8} />
-          </div>
-        ) : (
-          <>
-            <h1 className="text-center my-5">Our Mission</h1>
-            <p>
-              {" "}
-              Our mission at Thynk Unlimited is to lead a fitness revolution,
-              transforming the way people perceive health by integrating
-              physical vitality with mental wellness.Our gym serves as a haven
-              for inclusivity, welcoming individuals of all backgrounds and
-              abilities. Through innovative programs and personalized coaching,
-              we empower our members to not only achieve their fitness
-              aspirations but also enhance cognitive health, fostering clarity,
-              focus, and emotional resilience.
-            </p>
+        <h1 className="text-center my-5">Our Mission</h1>
+        <p>
+          {" "}
+          Our mission at Thynk Unlimited is to lead a fitness revolution,
+          transforming the way people perceive health by integrating physical
+          vitality with mental wellness.Our gym serves as a haven for
+          inclusivity, welcoming individuals of all backgrounds and abilities.
+          Through innovative programs and personalized coaching, we empower our
+          members to not only achieve their fitness aspirations but also enhance
+          cognitive health, fostering clarity, focus, and emotional resilience.
+        </p>
 
-            <p>
-              At Thynk Unlimited, we believe in the power of community to
-              inspire and support each other on our wellness journeys. Our
-              diverse and inclusive environment is built on a foundation of
-              respect and understanding, ensuring that every individual feels
-              valued and encouraged to thrive. Join us at Thynk Unlimited and
-              embark on a holistic wellness journey where physical strength and
-              mental well-being unite. Together, let's redefine fitness and
-              embrace a lifestyle that nurtures both body and mind, enabling you
-              to live your fullest and healthiest life.
-            </p>
-          </>
-        )}
+        <p>
+          At Thynk Unlimited, we believe in the power of community to inspire
+          and support each other on our wellness journeys. Our diverse and
+          inclusive environment is built on a foundation of respect and
+          understanding, ensuring that every individual feels valued and
+          encouraged to thrive. Join us at Thynk Unlimited and embark on a
+          holistic wellness journey where physical strength and mental
+          well-being unite. Together, let's redefine fitness and embrace a
+          lifestyle that nurtures both body and mind, enabling you to live your
+          fullest and healthiest life.
+        </p>
       </div>
       <div>
         <h1>Meet the Team</h1>

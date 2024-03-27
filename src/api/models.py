@@ -14,17 +14,18 @@ class User(db.Model):
     name = db.Column(db.String(80), nullable=True, unique=True)
     password = db.Column(db.String(80), nullable=False)
     is_active = db.Column(db.Boolean(), nullable=False)
-    blog = db.relationship('Blogs', backref=db.backref('blogs', lazy=True))
+    blogs = db.relationship('Blogs', back_populates='user', lazy=True)
+    comments = db.relationship('Comments', backref='user', lazy=True)
 
     def __repr__(self):
-        return f'<User {self.email}>'
+        return f'<{self.email}>'
 
     def serialize(self):
         return {
             "id": self.id,
             "email": self.email,
             "name": self.name,
-            "blog": list(map(lambda x: x.serialize(),self.blog))
+            "blogs": list(map(lambda x: x.serialize(),self.blog))
             # Do not serialize the password, it's a security breach
         }
     
@@ -53,10 +54,13 @@ class Comments(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     comment = db.Column(db.String(), unique=False, nullable=False)
     blog_id = db.Column(db.Integer, db.ForeignKey('blogs.id'), nullable=False)
-    blog = db.relationship('Blogs', backref=db.backref('post_comments', lazy=True))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    # blog = db.relationship('Blogs', backref=db.backref('post_comments', lazy=True))
+    # user = db.relationship('User', backref=db.backref('comments', lazy=True))
+    
 
     def __repr__(self):
-        return f'<Comments {self.comment}>'
+        return f'< {self.comment} >'
 
     def serialize(self):
         return {
@@ -67,21 +71,21 @@ class Comments(db.Model):
         }
 
 class Blogs(db.Model):
+    __tablename__ = 'blogs'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(), nullable=False)
     body = db.Column(db.String(), nullable=False)
-    user_name = db.Column(db.String(), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    user = db.relationship('User', back_populates="blogs")
+    comments = db.relationship('Comments', backref='blog', lazy=True)
 
     def __repr__(self):
-        return f'<Blogs {self.title}>'
+        return f'<{self.title}>'
     
     def serialize(self):
         return {
             "id": self.id,
             "title": self.title,
             "body": self.body,
-            "user_name": self.user_name,
             "comments": [comment.serialize() for comment in self.comments]
         }
-

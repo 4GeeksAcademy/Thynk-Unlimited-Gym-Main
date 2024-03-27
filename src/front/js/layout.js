@@ -15,6 +15,7 @@ import { AboutUs } from "./pages/aboutUs";
 import ScheduleTable from "./pages/classes2";
 import { Login } from "./pages/login";
 import { Forgot } from "./pages/forgot-pw";
+import { Connect } from "./pages/connect";
 
 //create your first component
 const Layout = () => {
@@ -41,6 +42,7 @@ const Layout = () => {
             />
             <Route element={<Login />} path="/login" />
             <Route element={<Forgot />} path="/forgot-pw"/>
+            <Route element={<Connect/>} path="/connect"/>
             <Route element={<h1>Not found!</h1>} />
           </Routes>
           <Footer />

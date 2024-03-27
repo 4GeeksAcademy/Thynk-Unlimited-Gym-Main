@@ -55,6 +55,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           price: 79.99,
         },
       ],
+      blogs: [],
     },
     actions: {
       // Use getActions to call a function within a fuction
@@ -149,6 +150,20 @@ const getState = ({ getStore, getActions, setStore }) => {
           console.log("login error");
           console.log("Error:", error.message);
         }
+      },
+      getBlogs: async () => {
+        const store = getStore();
+        const blogs = getStore().blogs;
+        const options = {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        };
+        const resp = await fetch(`${process.env.BACKEND_URL}api/`, options);
+        const data = await response.json();
+        console.log("Get blog raw data: ", data);
+        setStore({ blogs: data });
       },
     },
   };
