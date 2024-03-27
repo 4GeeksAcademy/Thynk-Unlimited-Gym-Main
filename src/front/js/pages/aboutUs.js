@@ -7,10 +7,15 @@ import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "animate.css";
 
-export const AboutUs = () => {
-  return (
-    <div>
-      <div className="">
+
+
+export const AboutUs = ()=>{
+
+  
+    return (
+        <div className="container d-flex flex-column align-content-center">
+
+<div>
         <h1 className="text-center my-5">Our Mission</h1>
         <p>
           {" "}
@@ -34,9 +39,11 @@ export const AboutUs = () => {
           lifestyle that nurtures both body and mind, enabling you to live your
           fullest and healthiest life.
         </p>
-      </div>
-      <div>
-        <h1>Meet the Team</h1>
+
+        </div>
+        <div>
+        <h1 className="text-center my-5">Meet the Team</h1>
+
 
         <div className="d-flex p-4">
           <div className="card card col-3 hvr-grow">
@@ -234,8 +241,9 @@ export const AboutUs = () => {
         sapiente placeat magnam eaque, harum hic expedita cum culpa. Quis.
       </p>
 
-      <h2>Locations</h2>
-      <div className="d-flex my-3 ">
+
+        <h2 className="text-center my-5">Locations</h2>
+        <div className="d-flex my-3 ">
         <div className="my-4 hvr-grow">
           <div className="card">
             <img
