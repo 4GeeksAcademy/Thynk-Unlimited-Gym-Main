@@ -1,0 +1,268 @@
+/* Common styles for all screen sizes */
+
+/* Login Header */
+.login-hdr {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Loader */
+#loader {
+  margin: 250px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Login Paragraph */
+.login-p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+/* Other Paragraph */
+#other-p {
+  font-size: 12px;
+  color: #333;
+}
+
+/* Social Container */
+.social-container .social {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+/* login button*/
+.ghost {
+  background-color: #e8c552;
+  box-shadow: 0 0 10px #000000;
+  border: 2px solid #b2973d;
+  color: #000000;
+  background-color: #e8c552;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.ghost:hover {
+  box-shadow: 0 0 20px #e8c552;
+  background-color: #ffffff;
+  color: #816e30;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+/* Login Container */
+#login-container {
+  width: fit-content;
+  position: relative;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Sign In Form */
+#signInForm {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+/* Social Container */
+.social-container {
+  margin: 20px 0;
+}
+
+/* Social Button Style */
+.social-container .social {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+/* Area */
+.area {
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #181717, #37373d);
+
+  height: 100%;
+}
+
+/* Circles Animation Container */
+.circles {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Squares Animation Style */
+.circles .squares {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 30s linear infinite;
+  bottom: -5px;
+}
+
+/* Squares Animation nth-child */
+.circles .squares:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles .squares:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles .squares:nth-child(3) {
+  left: 100%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+/* Add more variations below */
+.circles .squares:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles .squares:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles .squares:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles .squares:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles .squares:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles .squares:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles .squares:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+.circles .squares:nth-child(11) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+.login-btn {
+  background-color: #e8c552;
+  box-shadow: 0 0 10px #3498db;
+  border: 2px solid #c79e16;
+  color: #000000;
+  background-color: #e8c552;
+}
+
+.login-btn:hover {
+  box-shadow: 0 0 20px #e8c552;
+  background-color: #ffffff;
+  color: #816e30;
+}
+
+/* Keyframes Animation */
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+/* Media queries for responsive design */
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+  #loader {
+    margin: 50px;
+  }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #loader {
+    margin: 150px;
+  }
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+  #loader {
+    margin: 250px;
+  }
+}

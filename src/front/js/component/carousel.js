@@ -23,7 +23,7 @@ export const Carousel = () => {
     variableWidth: true,
     adaptiveHeight: true,
     centerPadding: "60px",
-    
+
     responsive: [
       {
         breakpoint: 1024,
@@ -88,8 +88,8 @@ export const Carousel = () => {
   return (
     <div className="container w-3/4 m-auto">
       <div className="mt-20">
-        <h1 className="d-flex justify-content-center">
-          What Our Members Are Saying
+        <h1 className="d-flex justify-content-center m-5">
+          <em>What Our Members Are Saying</em>
         </h1>
         <Slider {...settings}>
           {data.map((d, index) => (
