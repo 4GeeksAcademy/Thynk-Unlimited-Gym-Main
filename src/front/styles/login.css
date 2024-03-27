@@ -38,21 +38,21 @@
   margin: 15px 0;
 }
 
-/* Ghost Button Active */
-.ghost:active {
-  transform: scale(0.95);
-}
-
-/* Ghost Button Focus */
-.ghost:focus {
-  outline: none;
-}
-
-/* Ghost Button Style */
-.ghost.ghost {
-  background-color: transparent;
-  border-color: #000000;
+/* login button*/
+.ghost {
+  background-color: #e8c552;
+  box-shadow: 0 0 10px #000000;
+  border: 2px solid #b2973d;
+  color: #000000;
+  background-color: #e8c552;
   margin-top: 20px;
+  border-radius: 20px;
+}
+
+.ghost:hover {
+  box-shadow: 0 0 20px #e8c552;
+  background-color: #ffffff;
+  color: #816e30;
 }
 
 /* Form Container */
@@ -214,6 +214,20 @@
   height: 150px;
   animation-delay: 0s;
   animation-duration: 11s;
+}
+
+.login-btn {
+  background-color: #e8c552;
+  box-shadow: 0 0 10px #3498db;
+  border: 2px solid #c79e16;
+  color: #000000;
+  background-color: #e8c552;
+}
+
+.login-btn:hover {
+  box-shadow: 0 0 20px #e8c552;
+  background-color: #ffffff;
+  color: #816e30;
 }
 
 /* Keyframes Animation */

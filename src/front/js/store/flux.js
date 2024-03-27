@@ -1,6 +1,10 @@
+import { data, error } from "jquery";
+
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
+      members: [],
+      token: null,
       memberships: [
         {
           id: 1,
@@ -51,9 +55,28 @@ const getState = ({ getStore, getActions, setStore }) => {
           price: 79.99,
         },
       ],
+      blogs: [],
     },
     actions: {
       // Use getActions to call a function within a fuction
+
+      getUsers: async () => {
+        const store = getStore();
+        try {
+          const resp = await fetch(process.env.BACKEND_URL + "/api/user", {
+            headers: {
+              Authorization: "Bearer " + store.token,
+            },
+          });
+          const data = await resp.json();
+          console.log(data, "this is from the user");
+          setStore({ members: data });
+          return data;
+        } catch (error) {
+          console.log("error loading user", error);
+        }
+      },
+
       syncSessionToken: () => {
         const token = sessionStorage.getItem("token");
         if (token && token !== "" && token !== undefined) {
@@ -127,6 +150,20 @@ const getState = ({ getStore, getActions, setStore }) => {
           console.log("login error");
           console.log("Error:", error.message);
         }
+      },
+      getBlogs: async () => {
+        const store = getStore();
+        const blogs = getStore().blogs;
+        const options = {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        };
+        const resp = await fetch(`${process.env.BACKEND_URL}api/`, options);
+        const data = await response.json();
+        console.log("Get blog raw data: ", data);
+        setStore({ blogs: data });
       },
     },
   };
