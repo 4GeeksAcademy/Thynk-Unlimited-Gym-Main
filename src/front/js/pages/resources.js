@@ -1,6 +1,8 @@
 import { error } from "jquery";
 import React, { useState, useEffect } from "react";
 import "../../styles/resources.css";
+import { ScaleLoader } from "react-spinners";
+import "animate.css";
 
 function Resources() {
   const [articles, setArticles] = useState([]);
@@ -10,6 +12,13 @@ function Resources() {
       .then((resp) => resp.json())
       .then((data) => setArticles(data.articles))
       .catch((error) => console.log(error));
+  }, []);
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
 
   return (
@@ -62,9 +71,9 @@ function Resources() {
                 </a>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

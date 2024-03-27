@@ -16,7 +16,7 @@ export const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 3000);
   }, []);
 
   return (
@@ -27,7 +27,7 @@ export const Home = () => {
         </div>
       ) : (
         <>
-          <div className="text-center mt-5 animate__animated animate__fadeIn">
+          <div className="text-center mt-5">
             <Jumbotron title={title} description={description} />
           </div>
           <MembershipOptions />

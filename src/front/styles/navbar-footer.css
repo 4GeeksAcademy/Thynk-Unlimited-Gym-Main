@@ -60,6 +60,16 @@ footer {
 
 .login-btn {
   background-color: #e8c552;
+  box-shadow: 0 0 10px #3498db;
+  border: 2px solid #c79e16;
+  color: #000000;
+  background-color: #e8c552;
+}
+
+.login-btn:hover {
+  box-shadow: 0 0 20px #e8c552;
+  background-color: #ffffff;
+  color: #816e30;
 }
 
 /* New CSS - footer */

@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/login.css";
-import { FaFacebook, FaGoogle, FaLinkedinIn } from "react-icons/fa";
 import { ScaleLoader } from "react-spinners";
 import "animate.css";
 
@@ -27,7 +26,7 @@ export const Login = () => {
 
   useEffect(() => {
     if (store.token && store.token !== "" && store.token !== undefined) {
-      navigate("/login");
+      navigate("/manage");
     }
   }, [store.token, navigate]);
 
@@ -93,19 +92,7 @@ const SignInForm = ({ handleLogin }) => {
           >
             <div className="form-container sign-in-container animate__animated animate__rotateInDownLeft">
               <form onSubmit={handleSignIn}>
-                <h1 className="login-hdr">Sign in</h1>
-                <div className="social-container">
-                  <button className="social mx-2">
-                    <FaFacebook />
-                  </button>
-                  <button className="social mx-2">
-                    <FaGoogle />
-                  </button>
-                  <button className="social mx-2">
-                    <FaLinkedinIn />
-                  </button>
-                </div>
-                <span id="other-p">or use your account</span>
+                <h1 className="login-hdr">Log In</h1>
                 <input
                   id="signInForm"
                   type="email"
@@ -120,12 +107,12 @@ const SignInForm = ({ handleLogin }) => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                <Link to="/forgot-password" id="other-p" p-2>
+                <Link to="/forgot-pw" id="other-p" p-2>
                   Forgot your password?
                 </Link>
                 <div className="d-flex justify-content-end">
                   <button className="ghost p-2 btn btn-bg-dark" type="submit">
-                    Sign In
+                    Log In
                   </button>
                 </div>
               </form>
