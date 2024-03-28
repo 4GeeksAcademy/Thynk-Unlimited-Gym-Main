@@ -158,14 +158,15 @@ const getState = ({ getStore, getActions, setStore }) => {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Headers" : "Content-Type",
-              "Access-Control-Allow-Origin": "*",
-            'Content-Type': 'application/json',
-             "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH"
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH",
           },
-          mode: "cors"
         };
-        const resp = await fetch(`${process.env.BACKEND_URL}api/blogs`, options);
+        const resp = await fetch(
+          `${process.env.BACKEND_URL}api/blogs`,
+          options
+        );
         const data = await resp.json();
         console.log("Get blog raw data: ", data);
         setStore({ blogs: data });

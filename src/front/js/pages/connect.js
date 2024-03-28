@@ -11,13 +11,15 @@ export const Connect = () => {
 
   useEffect(() => {
     actions.getBlogs();
-  }, []);
+    console.log(store.blogs, "blogs should be here");
+  }, [store.blogs]);
 
   return (
     <div className="connect-container m-5 d-flex justify-content-center">
-      {store.blogs &&
-        store.blogs.map &&
-        store.blogs.map((index) => <div key={index}>{store.blogs.user}</div>)}
+      <div>
+        {store.blogs &&
+          store.blogs.map((index) => <div key={index}>{store.blogs.user}</div>)}
+      </div>
     </div>
   );
 };
