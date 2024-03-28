@@ -41,7 +41,7 @@ export const Navbar = () => {
           </li>
           <li className="navbar-item">
             <Link to="/login">
-              <button type="button" className="login-btn btn btn-bg-none">
+              <button type="button" className="btn btn-outline-warning">
                 LOGIN
               </button>
             </Link>

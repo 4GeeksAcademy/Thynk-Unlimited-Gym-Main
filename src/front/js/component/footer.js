@@ -4,6 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { MdOutlineEmail } from "react-icons/md";
+import Newsletter from "./newsletter";
 
 export const Footer = () => (
   <footer className="footer-container">
@@ -32,14 +33,9 @@ export const Footer = () => (
         <p>Email:thynkgroup@thynkunlimited.com</p>
       </div>
 
-      {/* Footer section for newsletter */}
-      <div className="footer-newsletter" style={{ flex: '1' }}>
-        <h5 className="subscribe-newsletter2" style={{ textAlign: 'left' }}> Subscribe to Our Newsletter</h5>
-        {/* Add your newsletter input fields or subscription form here */}
-      </div>
-
-      {/* Footer section for social */}
-      <div className="footer-social" style={{ width: '25%' }}>
+      <div>
+        <Newsletter/>
+        <div className="footer-social" style={{ width: '25%' }}>
         <h5 className="let's-connect" style={{ textAlign: 'left' }}> Let's Connect</h5>
         <div>
           <span className="social-icon" style={{ marginRight: '5px' }}>
@@ -63,6 +59,9 @@ export const Footer = () => (
             </a>
           </span>
         </div>
+      </div>
+      {/* Footer section for social */}
+      
       </div>
     </div>
   </footer>
