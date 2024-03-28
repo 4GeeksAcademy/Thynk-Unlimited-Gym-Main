@@ -74,11 +74,10 @@
 		]
 	},
 	"dependencies": {
-
+		"@stripe/react-stripe-js": "^2.6.2",
+		"@stripe/stripe-js": "^3.1.0",
 		"animate.css": "^4.1.1",
-
 		"hover.css": "^2.3.2",
-
 		"jquery": "^3.7.1",
 		"node-sass": "^9.0.0",
 		"owl.carousel": "^2.3.4",

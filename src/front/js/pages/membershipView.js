@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import { Link, useParams } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
 import "../../styles/home.css";
+import "animate.css";
 
 export const MembershipViewPage = () => {
   const { store, actions } = useContext(Context);
@@ -26,7 +27,7 @@ export const MembershipViewPage = () => {
   }, []);
 
   return (
-    <div className="container d-flex m-5">
+    <div className="container m-5">
       <div className="d-flex justify-content-center">
         {loading ? (
           <div className="loading-spinner">
@@ -34,11 +35,11 @@ export const MembershipViewPage = () => {
           </div>
         ) : (
           <>
-            <div className="titleContainer">
+            <div className="titleContainer animate__animated animate__slideInLeft">
               <h2>{title}</h2>
               <img src={imageUrl} alt={title} style={{ height: 500 }} />
             </div>
-            <div className="align-self-lg-center ms-4">
+            <div className="align-self-lg-center ms-4 animate__animated animate__slideInRight">
               <p>{description}</p>
               <ul>
                 {benefits.map((benefit, index) => (
@@ -46,16 +47,16 @@ export const MembershipViewPage = () => {
                 ))}
               </ul>
               <p>Price: ${price}</p>
-
-              <button type="button" className="btn btn-outline-light m-5">
-                Buy now
-              </button>
-
               <Link to={"/"}>
                 <button type="button" className="btn btn-outline-light">
                   Go back
                 </button>
               </Link>
+              <Link to={"/checkout"}>
+              <button type="button" className="btn btn-outline-light m-5">
+                Buy now
+              </button>
+             </Link> 
             </div>
           </>
         )}

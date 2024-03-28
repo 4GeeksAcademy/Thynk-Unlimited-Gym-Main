@@ -32,7 +32,7 @@ export const MembershipOptions = () => {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave} >
                      <img src={membership.imageUrl} alt={membership.title} /> 
-                    <div className="card-body">
+                    <div className="card-body1">
                         <h5 className="card-title">{membership.title}</h5>
                         <p className="card-text"> {membership.description} </p> 
                         <p className="card-text">Monthly Price: ${membership.price}</p>
